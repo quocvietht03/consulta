@@ -1,0 +1,448 @@
+body {
+	input[type="text"],input[type="email"],input[type="search"],input[type="tel"],textarea,select {
+		.easing-animation;
+		width: 100%;
+		outline: none;
+		font-size: 13px;
+		line-height: 24px;
+		letter-spacing: 0.05em;
+		color: #454545;
+		background-color: transparent;
+		border: 1px solid #ececec;
+		margin-bottom: 20px;
+		padding: 10px 30px;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		&:hover, &:focus {
+			border-color: #dcdcdc;
+		}
+	}
+
+	.input-submit {
+		.easing-animation;
+		display: inline-block;
+		padding: 12px 30px;
+		outline: none;
+		text-align: center;
+		background-color: transparent;
+		border:0;
+	}
+	input[type="submit"] {
+		.input-submit;
+		.bt-default-font-main;
+		font-size: 13px;
+		letter-spacing: 0.04em;
+		background-color: @main-color;
+		color: #ffffff;
+		&:hover, &:focus, &:active {
+			background-color: #313131;
+			color:#ffffff;
+		}
+	}
+
+	select {
+		height: 45px;
+	}
+
+	textarea {
+		resize: none;
+		min-height: 210px;
+		margin-bottom: 30px;
+	}
+
+	.placeholder {
+		color: #454545;
+	}
+
+	::-webkit-input-placeholder {
+		color: #454545;
+	}
+
+	:-moz-placeholder {
+		/* Firefox 18- */
+		color: #454545;
+	}
+
+	::-moz-placeholder {
+		/* Firefox 19+ */
+		color: #454545;
+	}
+
+	:-ms-input-placeholder {
+		color: #454545;
+	}
+	
+	.bt-get-a-call-back, .bt-contact-us, .bt-contact-us-2 {
+		.placeholder {
+			color: #a8a8a8;
+		}
+
+		::-webkit-input-placeholder {
+			color: #a8a8a8;
+		}
+
+		:-moz-placeholder {
+			/* Firefox 18- */
+			color: #a8a8a8;
+		}
+
+		::-moz-placeholder {
+			/* Firefox 19+ */
+			color: #a8a8a8;
+		}
+
+		:-ms-input-placeholder {
+			color: #a8a8a8;
+		}
+	}
+	
+	.bt-request-a-call-back {
+		.placeholder {
+			color: #141414;
+		}
+
+		::-webkit-input-placeholder {
+			color: #141414;
+		}
+
+		:-moz-placeholder {
+			/* Firefox 18- */
+			color: #141414;
+		}
+
+		::-moz-placeholder {
+			/* Firefox 19+ */
+			color: #141414;
+		}
+
+		:-ms-input-placeholder {
+			color: #141414;
+		}
+	}
+	
+	.bt-get-a-call-back {
+		.bt-title {
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 24px;
+			letter-spacing: 0.02em;
+			color: #a8a8a8;
+			margin-bottom: 7px;
+		}
+		.bt-fields {
+			.bt-field {
+				position: relative;
+				input, textarea, select {
+					color: #a8a8a8;
+					background: #383838;
+					border-color: #383838;
+					&:hover, &:focus {
+						background: fadeout(#383838, 30);
+					}
+					&.bt-phone-number {
+						margin-bottom: 30px;
+					}
+					&.bt-content {
+						height: 220px;
+					}
+					&.bt-submit {
+						font-size: 13px;
+						font-weight: 900;
+						line-height: 24px;
+						letter-spacing: 0.05em;
+						text-align: center;
+						color: #ffffff;
+						background: @main-color;
+						min-width: 170px;
+						&:hover {
+							background: mix(@main-color, #000000, 80);
+						}
+					}
+				}
+				.wpcf7-not-valid-tip {
+					line-height: 24px;
+					position: absolute;
+					right: 0;
+					top: -5px;
+					font-size: 0;
+					&:before {
+						content: "\f00d";
+						font-family: FontAwesome;
+						font-size: 10px;
+						width: 0;
+					}
+				}
+			}
+		}
+	}
+	
+	.bt-request-a-call-back {
+		.bt-fields {
+			.bt-field {
+				position: relative;
+				margin-bottom: 12px;
+				&:before {
+					font-family: FontAwesome;
+					content: "\f007";
+					font-size: 14px;
+					color: #c2c2c2;
+					position: absolute;
+					top: 11px;
+					left: 15px;
+					z-index: 1;
+				}
+				&.bt-field-email {
+					&:before {
+						content: "\f0e0";
+					}
+				}
+				&.bt-field-phone {
+					&:before {
+						content: "\f1d8";
+					}
+				}
+				&.bt-field-submit {
+					margin-top: 18px;
+					&:before {
+						content: "\f02c";
+						color: #ffffff;
+						top: 13px;
+						left: 20px;
+					}
+				}
+				input, textarea, select {
+					.bt-crimson-text-font;
+					font-size: 14px;
+					color: #141414;
+					line-height: 24px;
+					letter-spacing: 0.04em;
+					background: #ffffff;
+					margin-bottom: 0;
+					padding: 12px 12px 12px 40px;
+					border-color: #ffffff;
+					-webkit-border-radius: 15px;
+					-moz-border-radius: 15px;
+					border-radius: 15px;
+					&:hover, &:focus {
+						background: fadeout(#ffffff, 10);
+					}
+					&.bt-submit {
+						.bt-default-font-main;
+						font-size: 12px;
+						font-weight: 700;
+						line-height: 24px;
+						letter-spacing: 0.1em;
+						text-align: center;
+						color: #ffffff;
+						background: @main-color;
+						padding: 12px 30px 12px 50px;
+						&:hover {
+							background: mix(@main-color, #000000, 80);
+						}
+					}
+				}
+				.wpcf7-not-valid-tip {
+					line-height: 24px;
+					position: absolute;
+					right: 0;
+					top: -5px;
+					font-size: 0;
+					&:before {
+						content: "\f00d";
+						font-family: FontAwesome;
+						font-size: 10px;
+						width: 0;
+					}
+				}
+			}
+		}
+	}
+	
+	.bt-contact-us {
+		.bt-fields {
+			.bt-field {
+				position: relative;
+				input, textarea, select {
+					font-size: 14px;
+					line-height: 36px;
+					color: #999999;
+					margin-bottom: 30px;
+					border-color: fadeout(#e2e2e2, 57);
+					-webkit-border-radius: 5px;
+					-moz-border-radius: 5px;
+					border-radius: 5px;
+					&:hover, &:focus {
+						border-color: fadeout(#e2e2e2, 30);
+					}
+					&.bt-content {
+						height: 220px;
+					}
+					&.bt-submit {
+						.bt-default-font-second;
+						font-size: 14px;
+						font-weight: 700;
+						line-height: 24px;
+						letter-spacing: 0.04em;
+						text-align: center;
+						color: #ffffff;
+						background: @main-color;
+						min-width: 500px;
+						padding: 18px 30px;
+						margin-bottom: 0;
+						&:hover {
+							background: mix(@main-color, #000000, 80);
+						}
+					}
+				}
+				select {
+					min-height: 58px;
+				}
+				.wpcf7-not-valid-tip {
+					line-height: 24px;
+					position: absolute;
+					right: 0;
+					top: -5px;
+					font-size: 0;
+					&:before {
+						content: "\f00d";
+						font-family: FontAwesome;
+						font-size: 10px;
+						width: 0;
+					}
+				}
+			}
+		}
+	}
+	
+	.bt-contact-us-2 {
+		.bt-fields {
+			.bt-field {
+				position: relative;
+				input, textarea, select {
+					font-size: 14px;
+					line-height: 36px;
+					color: #999999;
+					margin-bottom: 30px;
+					border-color: fadeout(#e2e2e2, 57);
+					-webkit-border-radius: 5px;
+					-moz-border-radius: 5px;
+					border-radius: 5px;
+					&:hover, &:focus {
+						border-color: fadeout(#e2e2e2, 30);
+					}
+					&.bt-content {
+						height: 220px;
+					}
+					&.bt-submit {
+						.bt-default-font-second;
+						font-size: 14px;
+						font-weight: 700;
+						line-height: 24px;
+						letter-spacing: 0.04em;
+						text-align: center;
+						color: #ffffff;
+						background: @main-color;
+						width: 100%;
+						margin-bottom: 0;
+						padding: 18px 30px;
+						&:hover {
+							background: mix(@main-color, #000000, 80);
+						}
+					}
+				}
+				select {
+					min-height: 58px;
+				}
+				.wpcf7-not-valid-tip {
+					line-height: 24px;
+					position: absolute;
+					right: 0;
+					top: -5px;
+					font-size: 0;
+					&:before {
+						content: "\f00d";
+						font-family: FontAwesome;
+						font-size: 10px;
+						width: 0;
+					}
+				}
+			}
+			.bt-note {
+				font-size: 14px;
+				line-height: 24px;
+				letter-spacing: 0.04em;
+				text-align: center;
+				color: #999999;
+			}
+		}
+	}
+	
+	.bt-contact-form {
+		.bt-fields {
+			.bt-field {
+				position: relative;
+				input, textarea, select {
+					.bt-default-font-main;
+					font-size: 13px;
+					line-height: 40px;
+					color: #a0a0a0;
+					background: #e5e5e5;
+					margin-bottom: 30px;
+					border-color: #e5e5e5;
+					&:hover, &:focus {
+						border-color: #dcdcdc;
+					}
+					&.bt-content {
+						height: 220px;
+					}
+					&.bt-submit {
+						.bt-default-font-second;
+						font-size: 14px;
+						font-weight: 700;
+						line-height: 24px;
+						letter-spacing: 0.04em;
+						text-align: center;
+						color: #ffffff;
+						background: @main-color;
+						margin-bottom: 0;
+						padding: 15px 30px;
+						&:hover {
+							background: mix(@main-color, #000000, 80);
+						}
+					}
+				}
+				select {
+					min-height: 58px;
+				}
+				.wpcf7-not-valid-tip {
+					line-height: 24px;
+					position: absolute;
+					right: 0;
+					top: -5px;
+					font-size: 0;
+					&:before {
+						content: "\f00d";
+						font-family: FontAwesome;
+						font-size: 10px;
+						width: 0;
+					}
+				}
+			}
+			.bt-note {
+				font-size: 14px;
+				line-height: 24px;
+				letter-spacing: 0.04em;
+				text-align: center;
+				color: #999999;
+			}
+		}
+	}
+	
+	.wpcf7-response-output {
+		text-align: center;
+	}
+}
