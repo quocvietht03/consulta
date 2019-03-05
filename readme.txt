@@ -1,13 +1,11 @@
 === Consulta ===
-
 Theme Name: Consulta
-Theme URI: http://theme.bearsthemes.com/wordpress/consulta
+Theme URI: http://bearsthemespremium.com/theme/consulta
 Author: bearsthemes
 Author URI: http://bearsthemes.com
-Version: 2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: two-columns,left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Tags: two-columns,left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
 Description: Consulta is a fully configurable and easy to use responsive WordPress Theme  with a lot of great features.
 Text Domain: consulta
 
@@ -20,20 +18,24 @@ Text Domain: consulta
 5. Navigate to Appearance > Theme Options in your admin panel and customize to taste.
 
 == Changelog ==
+= 2.1 =
+* Released: October 18, 2018
+	- Update module import demo.
+	- Update oldest Woocomerce Template.
+	- Fix small issues ...
 
 = 2.0 =
 * Released: April 11, 2018
-	- Fix add extra param Visual Composer.
-	- Update oldest Woocomerce Template.
-	- Fix small issues ...
+    - Fix add extra param Visual Composer.
+    - Update oldest Woocomerce Template.
+    - Fix small issues ...
 
 = 1.3 =
 * Released: November 15, 2017
-	- Fix add extra param Visual Composer.
-	- Update oldest Woocomerce Template.
-	- Fix small issues ...
+    - Fix add extra param Visual Composer.
+    - Update oldest Woocomerce Template.
+    - Fix small issues ...
 
 = 1.0 =
 * Released: June 30, 2016
-
-Initial release
+    - Initial release.

@@ -1,8 +1,8 @@
 <?php
 function consulta_autoCompileLess($inputFile, $outputFile) {
-    require_once( ABSPATH.'/wp-admin/includes/file.php' );	
+    require_once ABSPATH.'/wp-admin/includes/file.php';	
 	WP_Filesystem();
-	require_once ( consulta_ABS_PATH_FR . '/inc/lessc.inc.php' );
+	require_once get_template_directory() . '/framework/inc/lessc.inc.php';
 	global $wp_filesystem, $consulta_options;
     $less = new lessc();
     $less->setFormatter("classic");

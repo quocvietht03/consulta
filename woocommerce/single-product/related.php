@@ -23,30 +23,30 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( $related_products ) : ?>
 
 	<div class="bt-related products">
-
 		<h3><i class="fa fa-crosshairs"></i><?php _e( 'Related Products', 'consulta' ); ?></h3>
 		<h6><?php _e( 'Store Company', 'consulta' ); ?></h6>
-		
-		<?php woocommerce_product_loop_start(); ?>
 
+		<?php woocommerce_product_loop_start(); ?>
+			
 			<div class="bt-product-items row">
 
 				<?php foreach ( $related_products as $related_product ) : ?>
 
-					<?php
-						$post_object = get_post( $related_product->get_id() );
+				<?php
+				 	$post_object = get_post( $related_product->get_id() );
 
-						setup_postdata( $GLOBALS['post'] =& $post_object );
+					setup_postdata( $GLOBALS['post'] =& $post_object );
 
-						wc_get_template_part( 'content', 'product' ); ?>
+					wc_get_template_part( 'content', 'product' ); ?>
 
 				<?php endforeach; ?>
 			
 			</div>
-			
+
 		<?php woocommerce_product_loop_end(); ?>
 
 	</div>
+
 
 <?php endif;
 

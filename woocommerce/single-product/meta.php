@@ -29,9 +29,9 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
 
 	<?php do_action( 'woocommerce_product_meta_start' ); ?>
 
-	<?php echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'consulta' ) . ' ', '</span>' ); ?>
+	<?php echo wc_get_product_category_list( $product->get_id(), ', ', '<div class="posted_in">' . _n( '<i class="fa fa-diamond"></i> Category:', '<i class="fa fa-diamond"></i> Categories:', count( $product->get_category_ids() ), 'consulta' ) . ' ', '</div>' ); ?>
 
-	<?php echo wc_get_product_tag_list( $product->get_id(), ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', count( $product->get_tag_ids() ), 'consulta' ) . ' ', '</span>' ); ?>
+	<?php echo wc_get_product_tag_list( $product->get_id(), ', ', '<div class="tagged_as">' . _n( '<i class="fa fa-tags"></i> Tag:', '<i class="fa fa-tags"></i> Tags:', count( $product->get_tag_ids() ), 'consulta' ) . ' ', '</div>' ); ?>
 
 	<?php do_action( 'woocommerce_product_meta_end' ); ?>
 

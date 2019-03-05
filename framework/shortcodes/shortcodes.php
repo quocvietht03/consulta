@@ -22,7 +22,7 @@ $elements = array(
 );
 
 foreach ($elements as $element) {
-	include($element .'/'. $element.'.php');
+	include get_template_directory().'/framework/shortcodes/'. $element .'/'. $element.'.php';
 }
 
 if(class_exists('Woocommerce')){
@@ -32,6 +32,6 @@ if(class_exists('Woocommerce')){
 	);
 	
 	foreach ($wooshops as $wooshop) {
-		include($wooshop .'/'. $wooshop.'.php'); 
+		include get_template_directory().'/framework/shortcodes/'. $wooshop .'/'. $wooshop.'.php'; 
 	}
 }

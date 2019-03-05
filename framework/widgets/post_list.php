@@ -94,7 +94,7 @@ class consulta_Post_List_Widget extends consulta_Widget {
 			$query_args['tax_query'] = array(
 									array(
 										'taxonomy' => 'category',
-										'field' => 'id',
+										'field' => 'slug',
 										'terms' => $category
 									)
 							);

@@ -1,7 +1,7 @@
-<?php
+<?php 
 	global $consulta_options;
 	$preset_color = (isset($consulta_options['preset_color'])&&$consulta_options['preset_color'])?$consulta_options['preset_color']: 'default';
-
+	
 ?>
 <div id="panel-style-selector">
 	<div class="panel-wrapper">
@@ -49,69 +49,69 @@
 						<?php
 						$homepages = array(
 							array(
-								'link' => 'http://theme.bearsthemes.com/wordpress/consulta/',
-								'img' => 'http://theme.bearsthemes.com/wordpress/consulta/wp-content/uploads/2016/10/home_demo1-min.jpg',
+								'link' => 'https://bearsthemespremium.com/theme/consulta/',
+								'img' => 'https://bearsthemespremium.com/theme/consulta/wp-content/uploads/2016/10/home_demo1-min.jpg',
 								'title' => 'Home Version 01'
 							),
 							array(
-								'link' => 'http://theme.bearsthemes.com/wordpress/consulta/home-page-v2/',
-								'img' => 'http://theme.bearsthemes.com/wordpress/consulta/wp-content/uploads/2016/10/home_demo2-min.jpg',
+								'link' => 'https://bearsthemespremium.com/theme/consulta/home-page-v2/',
+								'img' => 'https://bearsthemespremium.com/theme/consulta/wp-content/uploads/2016/10/home_demo2-min.jpg',
 								'title' => 'Home Version 02'
 							),
 							array(
-								'link' => 'http://theme.bearsthemes.com/wordpress/consulta/home-page-v3/',
-								'img' => 'http://theme.bearsthemes.com/wordpress/consulta/wp-content/uploads/2016/10/home_demo3-min.jpg',
+								'link' => 'https://bearsthemespremium.com/theme/consulta/home-page-v3/',
+								'img' => 'https://bearsthemespremium.com/theme/consulta/wp-content/uploads/2016/10/home_demo3-min.jpg',
 								'title' => 'Home Version 03'
 							),
 							array(
-								'link' => 'http://theme.bearsthemes.com/wordpress/consulta/home-page-v4/',
-								'img' => 'http://theme.bearsthemes.com/wordpress/consulta/wp-content/uploads/2016/10/home_demo4-min.jpg',
+								'link' => 'https://bearsthemespremium.com/theme/consulta/home-page-v4/',
+								'img' => 'https://bearsthemespremium.com/theme/consulta/wp-content/uploads/2016/10/home_demo4-min.jpg',
 								'title' => 'Home Version 04'
 							),
 							array(
-								'link' => 'http://theme.bearsthemes.com/wordpress/consulta/home-page-v5/',
-								'img' => 'http://theme.bearsthemes.com/wordpress/consulta/wp-content/uploads/2016/10/home_demo5-min.jpg',
+								'link' => 'https://bearsthemespremium.com/theme/consulta/home-page-v5/',
+								'img' => 'https://bearsthemespremium.com/theme/consulta/wp-content/uploads/2016/10/home_demo5-min.jpg',
 								'title' => 'Home Version 05'
 							),
 							array(
-								'link' => 'http://theme.bearsthemes.com/wordpress/consulta/home-page-v6/',
-								'img' => 'http://theme.bearsthemes.com/wordpress/consulta/wp-content/uploads/2016/10/home_demo6-min.jpg',
+								'link' => 'https://bearsthemespremium.com/theme/consulta/home-page-v6/',
+								'img' => 'https://bearsthemespremium.com/theme/consulta/wp-content/uploads/2016/10/home_demo6-min.jpg',
 								'title' => 'Home Version 06'
 							),
 							array(
-								'link' => 'http://theme.bearsthemes.com/wordpress/consulta/home-page-v7/',
-								'img' => 'http://theme.bearsthemes.com/wordpress/consulta/wp-content/uploads/2016/10/home_demo7-min.jpg',
+								'link' => 'https://bearsthemespremium.com/theme/consulta/home-page-v7/',
+								'img' => 'https://bearsthemespremium.com/theme/consulta/wp-content/uploads/2016/10/home_demo7-min.jpg',
 								'title' => 'Home Version 07'
 							),
 							array(
-								'link' => 'http://theme.bearsthemes.com/wordpress/consulta/home-page-v8/',
-								'img' => 'http://theme.bearsthemes.com/wordpress/consulta/wp-content/uploads/2016/10/home_demo8-min.jpg',
+								'link' => 'https://bearsthemespremium.com/theme/consulta/home-page-v8/',
+								'img' => 'https://bearsthemespremium.com/theme/consulta/wp-content/uploads/2016/10/home_demo8-min.jpg',
 								'title' => 'Home Version 08'
 							),
 							array(
-								'link' => 'http://theme.bearsthemes.com/wordpress/consulta/home-page-v9/',
-								'img' => 'http://theme.bearsthemes.com/wordpress/consulta/wp-content/uploads/2016/10/home_demo9-min.jpg',
+								'link' => 'https://bearsthemespremium.com/theme/consulta/home-page-v9/',
+								'img' => 'https://bearsthemespremium.com/theme/consulta/wp-content/uploads/2016/10/home_demo9-min.jpg',
 								'title' => 'Home Version 09'
 							),
 							array(
-								'link' => 'http://theme.bearsthemes.com/wordpress/consulta/home-page-v10/',
-								'img' => 'http://theme.bearsthemes.com/wordpress/consulta/wp-content/uploads/2016/10/home_demo10-min.jpg',
+								'link' => 'https://bearsthemespremium.com/theme/consulta/home-page-v10/',
+								'img' => 'https://bearsthemespremium.com/theme/consulta/wp-content/uploads/2016/10/home_demo10-min.jpg',
 								'title' => 'Home Version 10'
 							),
 							array(
-								'link' => 'http://theme.bearsthemes.com/wordpress/consulta/home-page-v11/',
-								'img' => 'http://theme.bearsthemes.com/wordpress/consulta/wp-content/uploads/2016/10/home_demo11-min.jpg',
+								'link' => 'https://bearsthemespremium.com/theme/consulta/home-page-v11/',
+								'img' => 'https://bearsthemespremium.com/theme/consulta/wp-content/uploads/2016/10/home_demo11-min.jpg',
 								'title' => 'Home Version 11'
 							),
 						);
 						foreach($homepages as $homepage) {
-							echo '<a href="'.esc_url($homepage['link']).'" data-img="'.esc_url($homepage['img']).'" target="_blank">
+							echo '<a href="'.esc_url($homepage['link']).'" data-img="'.esc_url($homepage['img']).'">
 									<div class="thumb" style="background: url('.esc_url($homepage['img']).') no-repeat scroll center top / cover;"></div>
 									<h6>'.$homepage['title'].'</h6>
 								</a>';
 						}
 						?>
-
+						
 					</div>
 				</section>
 			</div>

@@ -1,5 +1,5 @@
 <?php
-require_once(consulta_ABS_PATH_ADMIN .'/tgm-plugin-activation/plugin-options.php');
+require_once get_template_directory() .'/framework/admin/tgm-plugin-activation/plugin-options.php';
 
 /**
  * alone_wbc_importer_description

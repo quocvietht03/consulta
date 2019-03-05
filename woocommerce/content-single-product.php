@@ -12,7 +12,7 @@
  * @see 	    http://docs.woothemes.com/document/template-structure/
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     3.0.0
+ * @version     3.4.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -35,7 +35,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 }
 ?>
 
-<div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="bt-product-item">
 		<div class="row bt-col-full-height">
 			<div class="col-md-6 bt-col">
@@ -52,7 +52,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						do_action( 'woocommerce_show_product_images' );
 					?>
 					<?php if($catwalk_url) { ?>
-						<a href="#" class="bt-catwalk-btn">CatWork</a>
+						<a href="#" class="bt-catwalk-btn"><?php esc_html_e('CatWork', 'consulta'); ?></a>
 						<div class="bt-catwalk-video">
 							<video controls loop>
 							  <source src="<?php echo esc_url($catwalk_url); ?>" type="video/<?php echo substr($catwalk_url, -3); ?>">

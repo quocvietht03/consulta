@@ -60,7 +60,7 @@ function consulta_products_grid_render($atts) {
                     array(
                             'taxonomy' 		=> 'product_cat',
                             'terms' 		=> $category,
-                            'field' 		=> 'id',
+                            'field' 		=> 'slug',
                             'operator' 		=> 'IN'
                     )
         );

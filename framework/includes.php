@@ -1,4 +1,12 @@
 <?php
+// Verify purchase code
+require_once get_template_directory().'/framework/VerifyTheme.php';
+if(class_exists('VerifyTheme')){
+	function verifytheme_init(){
+		$VerifyTheme = new VerifyTheme();
+	}
+	add_action( 'after_setup_theme', 'verifytheme_init' );
+}
 /* Metaboxes */
 require_once consulta_ABS_PATH_FR.'/meta-boxes/meta-boxes.php';
 /* Load Shortcodes Function */
@@ -12,10 +20,11 @@ if (function_exists("vc_add_param")){
 	require_once consulta_ABS_PATH_FR.'/includes/vc_extra_params.php';
 }
 /* Vc extra Fields */
-if (class_exists('Vc_Manager')) {
-    function vc_add_extra_field( $name, $form_field_callback, $script_url = null ) {
-            return WpbakeryShortcodeParams::addField( $name, $form_field_callback, $script_url );
-    }
+if (class_exists("WpbakeryShortcodeParams")){
+	function consulta_add_extra_parame( $name, $form_field_callback, $script_url = null ) {
+		return WpbakeryShortcodeParams::addField( $name, $form_field_callback, $script_url );
+	}
+	require_once get_template_directory().'/framework/includes/vc_extra_fields.php';
 }
 /* Vc extra shorcodes */
 if (function_exists("vc_map")){
@@ -23,8 +32,4 @@ if (function_exists("vc_map")){
 	{
 		/*include $filepath;*/
 	}
-}
-/* Vc extra field */
-if (function_exists("vc_add_extra_field")){
-	require_once consulta_ABS_PATH_FR.'/includes/vc_extra_fields.php';
 }

@@ -289,7 +289,7 @@ function start_el( &$output, $item, $depth = 0, $args = array(), $current_object
         ?>
         <p class="description description-thin">
             <label for="edit-<?php echo esc_attr( $key . '-' . $item_id ); ?>">
-                <?php echo esc_html( $title ); ?> <a href="https://fortawesome.github.io/Font-Awesome/icons/" target="_blank">Url Icon</a><br />
+                <?php echo esc_html( $title ); ?> <a href="<?php echo esc_url('https://fortawesome.github.io/Font-Awesome/icons/'); ?>" target="_blank"><?php esc_html_e('Url Icon', 'consulta'); ?></a><br />
                 <input type="text" value="<?php echo esc_attr( $value ); ?>" id="edit-<?php echo esc_attr( $key . '-' . $item_id ); ?>" class=" <?php echo esc_attr( $key ); ?>" name="<?php echo esc_attr( $key . "[" . $item_id . "]" ); ?>" />
             </label>
         </p>

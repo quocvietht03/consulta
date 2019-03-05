@@ -46,7 +46,7 @@ function consulta_team_carousel_func($atts, $content = null) {
         $args['tax_query'] = array(
                                 array(
                                     'taxonomy' => 'team_category',
-                                    'field' => 'id',
+                                    'field' => 'slug',
                                     'terms' => $category
                                 )
                         );

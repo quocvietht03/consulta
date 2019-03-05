@@ -33,7 +33,7 @@ $consulta_post_show_post_comment = (int) isset($consulta_options['consulta_post_
 				<div class="row">
 					<div class="col-md-12">
 						<?php
-							$taxterms = wp_get_object_terms( get_the_ID(), 'portfolio_category', array('fields' => 'ids') );
+							$taxterms = wp_get_object_terms( get_the_ID(), 'portfolio_category', array('fields' => 'slugs') );
 							
 							$args = array(
 							'post_type' => 'portfolio',
@@ -43,7 +43,7 @@ $consulta_post_show_post_comment = (int) isset($consulta_options['consulta_post_
 							'tax_query' => array(
 								array(
 									'taxonomy' => 'portfolio_category',
-									'field' => 'id',
+									'field' => 'slug',
 									'terms' => $taxterms
 								)
 							),

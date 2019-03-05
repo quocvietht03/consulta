@@ -94,7 +94,7 @@ class consulta_Recent_Review_Widget extends consulta_Widget {
 			$query_args['tax_query'] = array(
 									array(
 										'taxonomy' => 'testimonial_category',
-										'field' => 'id',
+										'field' => 'slug',
 										'terms' => $category
 									)
 							);

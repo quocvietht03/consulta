@@ -34,7 +34,7 @@ function consulta_package_func($atts, $content = null) {
         $args['tax_query'] = array(
                                 array(
                                     'taxonomy' => 'package_category',
-                                    'field' => 'id',
+                                    'field' => 'slug',
                                     'terms' => $category
                                 )
                         );

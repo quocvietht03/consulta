@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header( 'shop' ); ?>
-	<?php require('title-bar-shop.php'); ?>
+	<?php require_once get_template_directory().'/woocommerce/title-bar-shop.php'; ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">

@@ -23,6 +23,9 @@ if ( ! function_exists( 'consulta_setup' ) ) {
 			'main_navigation'   => __( 'Main Navigation','consulta' ),
 		) );
 
+		/* This theme styles the visual editor to resemble the theme style, specifically font, colors, icons, and column width. */
+		add_editor_style('editor-style.css');
+		
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
@@ -205,45 +208,19 @@ if (!function_exists('consulta_logo')) {
 		$logo_retina = isset($consulta_options['logo_retina']) ? $consulta_options['logo_retina'] : false;
 		
 		// logo size
-		$logo_size = consulta_get_size_image($logo);
-		if(!empty($logo_size)) {
-			list($logo_w, $logo_h) = $logo_size;
-			
-			// logo retina width/2
-			$logo_w = ($logo_retina == true) ? $logo_w / 2 : $logo_w;
-			
-			$logo_result_arr[] = sprintf('<img class="logo" src="%s" width="%s" alt="%s"/>', $logo, $logo_w, __('Logo', 'consulta'));
-		}
+		$logo_w = isset($consulta_options['consulta_logo']['width']) && $consulta_options['consulta_logo']['width'] ? $consulta_options['consulta_logo']['width'] : '162';
+		$logo_w = ($logo_retina == true) ? $logo_w / 2 : $logo_w;
+		$logo_result_arr[] = sprintf('<img class="logo" src="%s" width="%s" alt="%s"/>', $logo, $logo_w, __('Logo', 'consulta'));
 		
 		// logo stick size
-		$logo_stick_size = consulta_get_size_image($logo_stick);
-		if(!empty($logo_stick_size)) {
-			list($logo_stick_w, $logo_stick_h) = $logo_stick_size;
-			
-			// logo retina width/2
-			$logo_stick_w = ($logo_retina == true) ? $logo_stick_w / 2 : $logo_stick_w;
-			
-			$logo_result_arr[] = sprintf('<img class="logo-stick" src="%s" width="%s" alt="%s"/>', $logo_stick, $logo_stick_w, __('Logo', 'consulta'));
-		}
+		$logo_stick_w = isset($consulta_options['consulta_logo_stick']['width']) && $consulta_options['consulta_logo_stick']['width'] ? $consulta_options['consulta_logo_stick']['width'] : '162';
+		$logo_stick_w = ($logo_retina == true) ? $logo_stick_w / 2 : $logo_stick_w;
+		$logo_result_arr[] = sprintf('<img class="logo-stick" src="%s" width="%s" alt="%s"/>', $logo_stick, $logo_stick_w, __('Logo', 'consulta'));
 		
 		echo implode('', $logo_result_arr);
 		//echo '<img class="logo" src="'.esc_url($logo).'" alt="Logo"/><img class="logo-stick" src="'.esc_url($logo_stick).'" alt="Logo Stick"/>';
 	}
 }
-
-if(!function_exists('consulta_get_size_image')) :
-	/*
-	 * Get image size
-	 * @param [string] $image_url
-	 * @return [array | empty]
-	 */
-	function consulta_get_size_image($image_url = '') {
-		if(empty($image_url)) return;
-		
-		$result = getimagesize($image_url);
-		return $result;
-	}
-endif;
 
 /* Page title */
 if (!function_exists('consulta_page_title')) {

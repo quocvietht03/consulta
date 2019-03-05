@@ -37,66 +37,66 @@ function consulta_register_required_plugins() {
      * Array of plugin arrays. Required keys are name and slug.
      * If the source is NOT from the .org repo, then source is also required.
      */
-	$root = 'http://theme.bearsthemes.com/autoupdate/plugins/';
+	$root = 'http://bearsthemespremium.com/install/plugin/';
     $plugins = array(
 		array(
-            'name'               => 'Bears Core',
+            'name'               => esc_html__('Bears Core', 'consulta'),
             'slug'               => 'bears_core',
-            'source'             => $root .'bears_core/bears_core_v1.1.zip',
+            'source'             => $root .'bears_core.zip',
             'required'           => true,
         ),
         array(
-            'name'               => 'Bears Shortcode',
+            'name'               => esc_html__('Bears Shortcode', 'consulta'),
             'slug'               => 'bears_shortcodes',
-            'source'             => $root .'bears_shortcodes/bears_shortcodes_v1.2.zip',
+            'source'             => $root .'bears_shortcodes.zip',
             'required'           => true,
         ),
 		array(
-            'name'      		 => 'Custom Post Type UI',
+            'name'      		 => esc_html__('Custom Post Type UI', 'consulta'),
             'slug'       		 => 'custom-post-type-ui',
             'required'  		 => true,
         ),
 		array(
-            'name'               => 'Lemon Grid',
+            'name'               => esc_html__('Lemon Grid', 'consulta'),
             'slug'               => 'lemongrid',
             'source'             => $root .'lemongrid.zip',
             'required'           => true,
         ),
         array(
-            'name'               => 'Revolution Slider',
+            'name'               => esc_html__('Revolution Slider', 'consulta'),
             'slug'               => 'revslider',
             'source'             => $root .'revslider.zip',
             'required'           => true,
         ),
         array(
-            'name'               => 'Visual Composer',
+            'name'               => esc_html__('WPBakery Page Builder', 'consulta'),
             'slug'               => 'js_composer',
             'source'             => $root .'js_composer.zip',
             'required'           => true,
         ),
         array(
-            'name'               => 'Bears Fullscreen Login',
+            'name'               => esc_html__('Bears Fullscreen Login', 'consulta'),
             'slug'               => 'bears-fullscreen-login',
-            'source'             => $root .'bears-fullscreen-login/bears-fullscreen-login_v1.1.zip',
+            'source'             => $root .'bears-fullscreen-login.zip',
             'required'           => false,
         ),
         array(
-            'name'               => 'WooCommerce - excelling eCommerce',
+            'name'               => esc_html__('WooCommerce - excelling eCommerce', 'consulta'),
             'slug'               => 'woocommerce',
             'required'           => false,
         ),
 		array(
-            'name'               => 'Contact Form 7',
+            'name'               => esc_html__('Contact Form 7', 'consulta'),
             'slug'               => 'contact-form-7',
             'required'           => false,
         ),
 		array(
-            'name'               => 'Newsletter',
+            'name'               => esc_html__('Newsletter', 'consulta'),
             'slug'               => 'newsletter',
             'required'           => false,
         ),
 		array(
-            'name' 				=> 'WP User Avatar',
+            'name' 				=> esc_html__('WP User Avatar', 'consulta'),
             'slug' 				=> 'wp-user-avatar',
             'required' 			=> false,
         )

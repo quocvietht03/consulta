@@ -24,7 +24,7 @@ if ( ! function_exists( 'consulta_BearsBlockIconImageParams' ) ) {
 				'title' => __( 'Icon Font Class', 'consulta' ),
 				'type' => 'text',
 				'value' => '',
-				'description' => 'Lib FontIcon: <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">Font-Awesome</a>, <a href="http://ionicons.com/" target="_blank">ionicons</a>, ...',
+				'description' => 'Lib FontIcon: Font-Awesome, ionicons, ...',
 			),
 			array(
 				'name' => 'image_icon',
@@ -101,7 +101,7 @@ if ( ! function_exists( 'consulta_BearsBlockServiceBoxParams' ) ) {
 				'title' => __( 'Icon Font Class', 'consulta' ),
 				'type' => 'text',
 				'value' => '',
-				'description' => 'Lib FontIcon: <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">Font-Awesome</a>, <a href="http://ionicons.com/" target="_blank">ionicons</a>, ...',
+				'description' => 'Lib FontIcon: Font-Awesome, ionicons, ...',
 			),
 			array(
 				'name' => 'image_icon',
@@ -146,7 +146,7 @@ if ( ! function_exists( 'consulta_BearsBlockServiceBox2Params' ) ) {
 				'title' => __( 'Icon Font Class', 'consulta' ),
 				'type' => 'text',
 				'value' => '',
-				'description' => 'Lib FontIcon: <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">Font-Awesome</a>, <a href="http://ionicons.com/" target="_blank">ionicons</a>, ...',
+				'description' => 'Lib FontIcon: Font-Awesome, ionicons, ...',
 			),
 			array(
 				'name' => 'title',
@@ -179,7 +179,7 @@ if ( ! function_exists( 'consulta_BearsBlockContactInfoParams' ) ) {
 				'title' => __( 'Icon Font Class', 'consulta' ),
 				'type' => 'text',
 				'value' => '',
-				'description' => 'Lib FontIcon: <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">Font-Awesome</a>, <a href="http://ionicons.com/" target="_blank">ionicons</a>, ...',
+				'description' => 'Lib FontIcon: Font-Awesome, ionicons, ...',
 			),
 			array(
 				'name' => 'title',
@@ -212,7 +212,7 @@ if ( ! function_exists( 'consulta_BearsBlockStepBoxParams' ) ) {
 				'title' => __( 'Icon Font Class', 'consulta' ),
 				'type' => 'text',
 				'value' => '',
-				'description' => 'Lib FontIcon: <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">Font-Awesome</a>, <a href="http://ionicons.com/" target="_blank">ionicons</a>, ...',
+				'description' => 'Lib FontIcon: Font-Awesome, ionicons, ...',
 			),
 			array(
 				'name' => 'image_icon',
@@ -379,7 +379,7 @@ if ( ! function_exists( 'consulta_BearsButtonPopupVideoParams' ) ) {
 				'title' => __( 'Icon Font Class', 'consulta' ),
 				'type' => 'text',
 				'value' => '',
-				'description' => 'Lib FontIcon: <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">Font-Awesome</a>, <a href="http://ionicons.com/" target="_blank">ionicons</a>, ...',
+				'description' => 'Lib FontIcon: Font-Awesome, ionicons, ...',
 			),
 			array(
 				'name' => 'link_video',

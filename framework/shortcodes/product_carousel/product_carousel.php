@@ -68,7 +68,7 @@ function consulta_product_carousel_func($atts, $content = null) {
                     array(
                             'taxonomy' 		=> 'product_cat',
                             'terms' 		=> $category,
-                            'field' 		=> 'id',
+                            'field' 		=> 'slug',
                             'operator' 		=> 'IN'
                     )
         );

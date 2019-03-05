@@ -42,7 +42,7 @@ function consulta_portfolio_carousel_func($atts, $content = null) {
         $args['tax_query'] = array(
                                 array(
                                     'taxonomy' => 'portfolio_category',
-                                    'field' => 'id',
+                                    'field' => 'slug',
                                     'terms' => $category
                                 )
                         );

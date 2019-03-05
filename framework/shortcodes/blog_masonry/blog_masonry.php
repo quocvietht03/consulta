@@ -37,7 +37,7 @@ function consulta_blog_masonry_func($atts, $content = null) {
         $args['tax_query'] = array(
                                 array(
                                     'taxonomy' => 'category',
-                                    'field' => 'id',
+                                    'field' => 'slug',
                                     'terms' => $category
                                 )
                         );

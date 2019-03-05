@@ -3,7 +3,7 @@
  * Taxonomy checkbox list field
  */
 function consulta_taxonomy_settings_field($settings, $value) {
-    $dependency = vc_generate_dependencies_attributes($settings);
+    $dependency = function_exists('vc_generate_dependencies_attributes') ? vc_generate_dependencies_attributes($settings) : '';
     $terms_fields = array();
     $value_arr = $value;
 
@@ -17,7 +17,7 @@ function consulta_taxonomy_settings_field($settings, $value) {
         if ($terms && !is_wp_error($terms)) {
             foreach ($terms as $term) {
                 $terms_fields[] = sprintf(
-                        '<label><input onclick="changeCategory(this);" id="%s" class="tb-check-taxonomy %s" type="checkbox" name="%s" value="%s" %s/>%s</label>', $settings['param_name'] . '-' . $term->slug, $settings['param_name'] . ' ' . $settings['type'], $settings['param_name'], $term->term_id, checked(in_array($term->term_id, $value_arr), true, false), $term->name
+                        '<label><input onclick="changeCategory(this);" id="%s" class="tb-check-taxonomy %s" type="checkbox" name="%s" value="%s" %s/>%s</label>', $settings['param_name'] . '-' . $term->slug, $settings['param_name'] . ' ' . $settings['type'], $settings['param_name'], $term->slug, checked(in_array($term->slug, $value_arr), true, false), $term->name
                 );
             }
         }
@@ -30,7 +30,8 @@ function consulta_taxonomy_settings_field($settings, $value) {
             . '</div>'
             . '</div>';
 }
-vc_add_extra_field('consulta_taxonomy', 'consulta_taxonomy_settings_field');
+consulta_add_extra_parame('bt_taxonomy', 'consulta_taxonomy_settings_field');
+
 
 /*
  * Hidden field
@@ -38,11 +39,11 @@ vc_add_extra_field('consulta_taxonomy', 'consulta_taxonomy_settings_field');
 
 function consulta_hidden_settings_field($settings, $value){
    $dependency = vc_generate_dependencies_attributes($settings);
-   return '<div class="consulta_hidden_block">'
+   return '<div class="tb_hidden_block">'
              .'<input name="'.$settings['param_name']
              .'" class="wpb_vc_param_value wpb-textinput '
              .$settings['param_name'].' '.$settings['type'].'_field" type="hidden" value="'
              .$value.'" ' . $dependency . '/>'
          .'</div>';
 }
-vc_add_extra_field('consulta_hidden', 'consulta_hidden_settings_field');
+consulta_add_extra_parame('tb_hidden', 'consulta_hidden_settings_field');

@@ -94,7 +94,7 @@ class consulta_Contact_Slider_Widget extends consulta_Widget {
 			$query_args['tax_query'] = array(
 									array(
 										'taxonomy' => 'team_category',
-										'field' => 'id',
+										'field' => 'slug',
 										'terms' => $category
 									)
 							);

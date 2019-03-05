@@ -369,7 +369,7 @@
 				'subtitle' => __('Controls several items, ex: link hovers, highlights, and more. (default: #00abc9).', 'consulta'),
 				'default'  => '#00abc9',
 				'validate' => 'color',
-				//'output'   => array('.bt-main-color'),
+				'output'   => array('.bt-main-color'),
 				'required' => array('preset_color','=','default')
 			),
 			array(

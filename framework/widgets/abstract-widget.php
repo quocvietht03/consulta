@@ -166,7 +166,7 @@ abstract class consulta_Widget extends WP_Widget {
 							if ($terms && !is_wp_error($terms)) {
 								foreach ($terms as $term) {
 									$product_cats[] = sprintf(
-										'<label><input onclick="changeCategory(this);" id="%s" class="ww-check-taxonomy %s" type="checkbox" name="%s" value="%s" %s/>%s</label>', 'product_cat' . '-' . $term->slug, 'product_cat', 'product_cat', $term->term_id, checked(in_array($term->term_id, $arr_product_cat), true, false), $term->name
+										'<label><input onclick="changeCategory(this);" id="%s" class="ww-check-taxonomy %s" type="checkbox" name="%s" value="%s" %s/>%s</label>', 'product_cat' . '-' . $term->slug, 'product_cat', 'product_cat', $term->slug, checked(in_array($term->slug, $arr_product_cat), true, false), $term->name
 									);
 								}
 								echo implode($product_cats);

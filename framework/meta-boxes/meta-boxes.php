@@ -65,43 +65,43 @@ class consulta_framework_metaboxes {
 	public function post_options()
 	{
 		$data = $this->data;
-		include 'blog_options.php';
+		include get_template_directory() .'/framework/meta-boxes/blog_options.php';
 	}
 	public function post_video()
 	{
-		include 'post_video.php';
+		include get_template_directory() .'/framework/meta-boxes/post_video.php';
 	}
 	public function post_audio()
 	{
-		include 'post_audio.php';
+		include get_template_directory() .'/framework/meta-boxes/post_audio.php';
 	}
 	public function post_quote()
 	{
-		include 'post_quote.php';
+		include get_template_directory() .'/framework/meta-boxes/post_quote.php';
 	}
 	public function post_link()
 	{
-		include 'post_link.php';
+		include get_template_directory() .'/framework/meta-boxes/post_link.php';
 	}
 	public function post_gallery()
 	{
-		include 'post_gallery.php';
+		include get_template_directory() .'/framework/meta-boxes/post_gallery.php';
 	}
 	public function post_portfolio()
 	{
-		include 'post_portfolio.php';
+		include get_template_directory() .'/framework/meta-boxes/post_portfolio.php';
 	}
 	public function post_team()
 	{
-		include 'post_team.php';
+		include get_template_directory() .'/framework/meta-boxes/post_team.php';
 	}
 	public function post_testimonial()
 	{
-		include 'post_testimonial.php';
+		include get_template_directory() .'/framework/meta-boxes/post_testimonial.php';
 	}
 	public function post_product()
 	{
-		include 'post_product.php';
+		include get_template_directory() .'/framework/meta-boxes/post_product.php';
 	}
 	public function text($id, $label, $default, $desc = '')
 	{
