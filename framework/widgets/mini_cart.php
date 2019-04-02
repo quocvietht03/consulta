@@ -65,7 +65,7 @@ if(!function_exists('woocommerce_icon_add_to_cart_fragment')){
 		global $woocommerce;
 		ob_start();
 		?>
-		<span class="cart_total"><?php echo $woocommerce->cart->cart_contents_count; ?></span>
+		<span class="cart_total"><?php echo ''.$woocommerce->cart->cart_contents_count; ?></span>
 		<?php
 		$fragments['span.cart_total'] = ob_get_clean();
 		return $fragments;

@@ -10,11 +10,11 @@
 				$video_url = get_post_meta(get_the_ID(), 'consulta_post_video_url', true);
 				if($video_url) {
 					$media_output .= '<div class="bt-overlay">
-										<a href="'.esc_url($video_url).'" class="html5lightbox" data-group=""  data-thumbnail="" data-width="" data-height="" title=""><i class="fa fa-play"></i></a>
+										<a href="'.esc_url($video_url).'" class="html5lightbox" data-group=""  data-thumbnail="" data-width="" data-height=""><i class="fa fa-play"></i></a>
 									</div>
 									';
 				}
-				echo $media_output;
+				echo ''.$media_output;
 			?>
 		</div>
 		<ul class="bt-meta">

@@ -21,7 +21,7 @@ $_class 	= sprintf( 'bs-block-layout-%s %s', str_replace( '.php', '', $atts['tem
 		?>
 	</div>
 	<div class="bs-content">
-		<h3 class="bs-order-number"><?php echo $atts['template_params']['order_number']; ?></h3>
-		<h4 class="bs-title"><a href="<?php echo esc_url($atts['template_params']['extra_link']); ?>"><?php echo $atts['template_params']['title']; ?></a></h4>
+		<h3 class="bs-order-number"><?php echo ''.$atts['template_params']['order_number']; ?></h3>
+		<h4 class="bs-title"><a href="<?php echo esc_url($atts['template_params']['extra_link']); ?>"><?php echo ''.$atts['template_params']['title']; ?></a></h4>
 	</div>
 </div>

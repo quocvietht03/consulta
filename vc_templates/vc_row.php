@@ -152,4 +152,4 @@ $output .= '	</div>
 			</div>';
 $output .= $after_output;
 
-echo $output;
+echo ''.$output;

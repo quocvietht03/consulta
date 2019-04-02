@@ -15,17 +15,17 @@ $_class 	= sprintf( 'bs-pricing-table-layout-%s bs-status-%s %s', str_replace( '
 	<div class="bs-header">
 		<h3 class="bs-price">
 			<?php if($atts['template_params']['price']['position_symbols'] == 'left') { ?>
-				<span class="bs-symbol"><?php echo $atts['template_params']['price']['symbols']; ?></span><?php echo $atts['template_params']['price']['price']; ?><span class="bs-unit"> / <?php echo $atts['template_params']['unit']; ?></span>
+				<span class="bs-symbol"><?php echo ''.$atts['template_params']['price']['symbols']; ?></span><?php echo ''.$atts['template_params']['price']['price']; ?><span class="bs-unit"> / <?php echo ''.$atts['template_params']['unit']; ?></span>
 			<?php } else { ?>
-				<?php echo $atts['template_params']['price']['price']; ?><span class="bs-symbol"><?php echo $atts['template_params']['price']['symbols']; ?></span><span class="bs-unit"> / <?php echo $atts['template_params']['unit']; ?></span>
+				<?php echo ''.$atts['template_params']['price']['price']; ?><span class="bs-symbol"><?php echo ''.$atts['template_params']['price']['symbols']; ?></span><span class="bs-unit"> / <?php echo ''.$atts['template_params']['unit']; ?></span>
 			<?php } ?>
 		</h3>
-		<h4 class="bs-name"><?php echo $atts['template_params']['name']; ?></h4>
+		<h4 class="bs-name"><?php echo ''.$atts['template_params']['name']; ?></h4>
 	</div>
 	<div class="bs-content">
-		<?php echo $atts['template_params']['content']; ?>
+		<?php echo ''.$atts['template_params']['content']; ?>
 	</div>
 	<div class="bs-footer">
-		<a class="bs-button" href="<?php echo esc_url($atts['template_params']['button']['link']); ?>"><?php echo $atts['template_params']['button']['text']; ?></a>
+		<a class="bs-button" href="<?php echo esc_url($atts['template_params']['button']['link']); ?>"><?php echo ''.$atts['template_params']['button']['text']; ?></a>
 	</div>
 </div>

@@ -12,7 +12,7 @@
 					$audio_url = get_post_meta(get_the_ID(), 'consulta_post_audio_url', true);
 					if($audio_url) echo do_shortcode('[audio '.$audio_type.'="'.$audio_url.'"][/audio]');
 				} 
-				echo $media_output;
+				echo ''.$media_output;
 			?>
 		</div>
 		<ul class="bt-meta">

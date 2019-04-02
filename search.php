@@ -39,7 +39,7 @@ consulta_title_bar($consulta_show_page_title, $consulta_show_page_breadcrumb);
 											<li class="bt-public"><?php echo '<i class="fa fa-clock-o"></i> '.get_the_date('M d, Y'); ?></li>
 											<li><a href="<?php comments_link(); ?>"><?php comments_number( '<i class="fa fa-comments-o"></i> 0', '<i class="fa fa-comments-o"></i> 1', '<i class="fa fa-comments-o"></i> %' ); ?></a></li>
 										</ul>
-										<a class="bt-readmore" href="<?php the_permalink(); ?>"><?php echo $readmore_text; ?></a>
+										<a class="bt-readmore" href="<?php the_permalink(); ?>"><?php echo ''.$readmore_text; ?></a>
 									</div>
 								</article>
 								<?php

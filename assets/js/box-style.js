@@ -35,7 +35,7 @@
 				$('#panel-style-selector .demo-popup').fadeOut(0, function(){
 					$(this).fadeIn(500);
 				});
-				$('#panel-style-selector .demo-popup').html('<img src="' + img_link + '" alt="">');
+				$('#panel-style-selector .demo-popup').html('<img src="' + img_link + '" alt="thumb">');
 			},function(){
 				$('#panel-style-selector .demo-popup').fadeOut(0);
 				$('#panel-style-selector .demo-popup').empty();

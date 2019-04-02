@@ -19,7 +19,7 @@ $count = 0;
 				<div class="bs-col bs-content">
 					<h3 class="bs-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 					<div class="bs-excerpt"><?php echo consulta_custom_excerpt($atts['template_params']['excerpt_lenght'], $atts['template_params']['excerpt_more']); ?></div>
-					<a class="bs-read-more" href="<?php the_permalink(); ?>"><?php echo $atts['template_params']['read_more_text']; ?></a>
+					<a class="bs-read-more" href="<?php the_permalink(); ?>"><?php echo ''.$atts['template_params']['read_more_text']; ?></a>
 				</div>
 			<?php } ?>
 			<?php
@@ -32,7 +32,7 @@ $count = 0;
 				<div class="bs-col bs-content">
 					<h3 class="bs-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 					<div class="bs-excerpt"><?php echo consulta_custom_excerpt($atts['template_params']['excerpt_lenght'], $atts['template_params']['excerpt_more']); ?></div>
-					<a class="bs-read-more" href="<?php the_permalink(); ?>"><?php echo $atts['template_params']['read_more_text']; ?></a>
+					<a class="bs-read-more" href="<?php the_permalink(); ?>"><?php echo ''.$atts['template_params']['read_more_text']; ?></a>
 				</div>
 			<?php } ?>
 		</div>

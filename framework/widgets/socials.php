@@ -29,7 +29,7 @@ class consulta_Social_Widget extends WP_Widget {
 		
         ob_start();
 		
-        echo $before_widget;
+        echo ''.$before_widget;
 		if ( $title )
 				echo ''.$before_title . $title . $after_title;  
         ?>
@@ -45,7 +45,7 @@ class consulta_Social_Widget extends WP_Widget {
         <?php } ?>
         </div>
         <?php
-        echo $after_widget;
+        echo ''.$after_widget;
         echo ob_get_clean();
     }
 
@@ -72,25 +72,25 @@ class consulta_Social_Widget extends WP_Widget {
 		?>
 		<p>
             <label for="<?php echo esc_attr($this->get_field_id('title')); ?>"><?php _e('Title:', 'consulta'); ?></label>
-            <input class="widefat" id="<?php echo esc_attr($this->get_field_id('title')); ?>" name="<?php echo esc_attr($this->get_field_name('title')); ?>" value="<?php echo $title; ?>" />
+            <input class="widefat" id="<?php echo esc_attr($this->get_field_id('title')); ?>" name="<?php echo esc_attr($this->get_field_name('title')); ?>" value="<?php echo ''.$title; ?>" />
         </p>
         <?php
         for ($i = 1; $i <= 12; $i++) {
             ?>
             <p>
                 <label for="<?php echo esc_url($this->get_field_id('icon_social_' . $i)); ?>"><?php _e('Social Icon:', 'consulta');
-            echo $i; ?></label>
+            echo ''.$i; ?></label>
                 <input class="widefat" id="<?php echo esc_attr($this->get_field_id('icon_social_' . $i)); ?>" name="<?php echo esc_attr($this->get_field_name('icon_social_' . $i)); ?>" type="text" value="<?php echo esc_attr($icon_social[$i]); ?>" />
             </p>
             <p>
                 <label for="<?php echo esc_url($this->get_field_id('link_social_' . $i)); ?>"><?php _e('Social Link:', 'consulta');
-            echo $i; ?></label>
+            echo ''.$i; ?></label>
                 <input class="widefat" id="<?php echo esc_attr($this->get_field_id('link_social_' . $i)); ?>" name="<?php echo esc_attr($this->get_field_name('link_social_' . $i)); ?>" type="text" value="<?php echo esc_attr($link_social[$i]); ?>" />
             </p>
         <?php } ?>
         <p>
             <label for="<?php echo esc_attr($this->get_field_id('el_class')); ?>"><?php _e('Extra Class:', 'consulta'); ?></label>
-            <input class="widefat" id="<?php echo esc_attr($this->get_field_id('el_class')); ?>" name="<?php echo esc_attr($this->get_field_name('el_class')); ?>" value="<?php echo $el_class; ?>" />
+            <input class="widefat" id="<?php echo esc_attr($this->get_field_id('el_class')); ?>" name="<?php echo esc_attr($this->get_field_name('el_class')); ?>" value="<?php echo ''.$el_class; ?>" />
         </p>
         <?php
     }

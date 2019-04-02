@@ -96,7 +96,7 @@ function consulta_maps_render($params) {
 	$maps_id = uniqid('maps-');
     ?>
     <div class="ro_maps">
-    	<div id="<?php echo $maps_id; ?>" class="maps-render" <?php echo implode(' ', $setting); ?> style="width:<?php echo esc_attr($width); ?>;height: <?php echo esc_attr($height); ?>"></div>
+    	<div id="<?php echo ''.$maps_id; ?>" class="maps-render" <?php echo implode(' ', $setting); ?> style="width:<?php echo esc_attr($width); ?>;height: <?php echo esc_attr($height); ?>"></div>
     </div>
 	<?php
 	return ob_get_clean();

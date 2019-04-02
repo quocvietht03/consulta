@@ -7,7 +7,7 @@
 				if (has_post_thumbnail()) {
 					$media_output = '<a href="'.get_the_permalink().'">'.get_the_post_thumbnail(get_the_ID(), "full").'</a>';
 				}
-				echo $media_output;
+				echo ''.$media_output;
 			?>
 		</div>
 		<ul class="bt-meta">

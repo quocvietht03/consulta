@@ -97,4 +97,4 @@ foreach ( $graph_lines_data as $line ) {
 
 $output .= '</div>';
 
-echo $output;
+echo ''.$output;

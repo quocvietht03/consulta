@@ -24,7 +24,7 @@ function consulta_demo_item($params, $content = null) {
 		<?php if($type == 'image') { ?>
 			<a href="<?php echo esc_url($demo_link); ?>"  target="_blank">
 				<div class="bt-thumb"><img src="<?php echo esc_url($attachment_image[0]); ?>" alt="Demo Item"></div>
-				<h3 class="bt-title"><?php echo $title; ?></h3>
+				<h3 class="bt-title"><?php echo ''.$title; ?></h3>
 			</a>
 		<?php } else { ?>
 			<div class="bt-gallery">
@@ -32,13 +32,13 @@ function consulta_demo_item($params, $content = null) {
 					<?php
 						foreach($image_ids as $key => $image_id) {
 							$attachment = wp_get_attachment_image_src ( $image_id, 'full' );
-							echo '<a href="'.esc_url($demo_link).'" target="_blank"><img src="'.$attachment[0].'" alt=""/></a>';
+							echo '<a href="'.esc_url($demo_link).'" target="_blank"><img src="'.$attachment[0].'" alt="'.esc_attr__('thumb', 'consulta').'"/></a>';
 						}
 					?>
 				</div>
 			</div>
 			<a href="<?php echo esc_url($demo_link); ?>" target="_blank">
-				<h3 class="bt-title"><?php echo $title; ?></h3>
+				<h3 class="bt-title"><?php echo ''.$title; ?></h3>
 			</a>
 		<?php } ?>
 	</div>

@@ -21,7 +21,7 @@
 										$attachment_image = wp_get_attachment_image_src($attachment_id, 'full', false);
 										if($attachment_image[0]){
 											$media_output .= '<div class="item bt-gallery '.esc_attr($cl_active).'">
-																<img src="'.esc_url($attachment_image[0]).'" alt="" />
+																<img src="'.esc_url($attachment_image[0]).'" alt="'.esc_attr__('thumb', 'consulta').'" />
 															</div>';
 										}
 									}
@@ -43,7 +43,7 @@
 								$video_url = get_post_meta(get_the_ID(), 'consulta_post_video_url', true);
 								if($video_url) {
 									$media_output .= '<div class="bt-overlay">
-														<a href="'.esc_url($video_url).'" class="html5lightbox" data-group=""  data-thumbnail="" data-width="480" data-height="320" title=""><i class="fa fa-play"></i></a>
+														<a href="'.esc_url($video_url).'" class="html5lightbox" data-group=""  data-thumbnail="" data-width="480" data-height="320"><i class="fa fa-play"></i></a>
 													</div>
 													';
 								}
@@ -85,7 +85,7 @@
 								}
 								break;
 						}
-						echo $media_output;
+						echo ''.$media_output;
 					?>
 				</div>
 			</div>
@@ -99,7 +99,7 @@
 						<li class="bt-public"><?php echo get_the_date('d M, Y'); ?></li>
 					</ul>
 					<div class="bt-excerpt"><?php echo consulta_custom_excerpt($excerpt_lenght, $excerpt_more); ?></div>
-					<a class="bt-btn-main" href="<?php the_permalink(); ?>"><?php echo $readmore_text; ?></a>
+					<a class="bt-btn-main" href="<?php the_permalink(); ?>"><?php echo ''.$readmore_text; ?></a>
 				</div>
 			</div>
 		</div>
@@ -124,7 +124,7 @@
 										$attachment_image = wp_get_attachment_image_src($attachment_id, 'full', false);
 										if($attachment_image[0]){
 											$media_output .= '<div class="item bt-gallery '.esc_attr($cl_active).'">
-																<img src="'.esc_url($attachment_image[0]).'" alt="" />
+																<img src="'.esc_url($attachment_image[0]).'" alt="'.esc_attr__('thumb', 'consulta').'" />
 															</div>';
 										}
 									}
@@ -146,7 +146,7 @@
 								$video_url = get_post_meta(get_the_ID(), 'consulta_post_video_url', true);
 								if($video_url) {
 									$media_output .= '<div class="bt-overlay">
-														<a href="'.esc_url($video_url).'" class="html5lightbox" data-group=""  data-thumbnail="" data-width="480" data-height="320" title=""><i class="fa fa-play"></i></a>
+														<a href="'.esc_url($video_url).'" class="html5lightbox" data-group=""  data-thumbnail="" data-width="480" data-height="320"><i class="fa fa-play"></i></a>
 													</div>
 													';
 								}
@@ -188,7 +188,7 @@
 								}
 								break;
 						}
-						echo $media_output;
+						echo ''.$media_output;
 					?>
 				</div>
 			</div>

@@ -52,7 +52,7 @@ endif;
 				<div class="bs-overlay">
 					<div class="bs-content">
 						<h3 class="bs-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-						<div class='bs-taxonomy'><?php echo $cats; ?></div>
+						<div class='bs-taxonomy'><?php echo ''.$cats; ?></div>
 						<div class="bs-handle">
 							<a class="video html5lightbox" href="<?php echo esc_url($video_url); ?>" title="<?php the_title(); ?>"><i class="fa fa-play"></i></a>
 							<a class="lightbox" href="<?php echo esc_url($thumbnail); ?>" data-imagelightbox-thumbnail="" title="<?php _e( 'view thumbnail', 'consulta' ) ?>"><i class='fa fa-search'></i></a>

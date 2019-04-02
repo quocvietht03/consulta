@@ -19,7 +19,7 @@
 								$attachment_image = wp_get_attachment_image_src($attachment_id, 'full', false);
 								if($attachment_image[0]){
 									$media_output .= '<div class="item bt-gallery '.esc_attr($cl_active).'">
-														<img src="'.esc_url($attachment_image[0]).'" alt="" />
+														<img src="'.esc_url($attachment_image[0]).'" alt="'.esc_attr__('thumb', 'consulta').'" />
 													</div>';
 								}
 							}
@@ -41,7 +41,7 @@
 						$video_url = $gallery = get_post_meta(get_the_ID(), 'consulta_post_video_url', true);
 						if($video_url) {
 							$media_output .= '<div class="bt-overlay">
-												<a href="'.esc_url($video_url).'" class="html5lightbox" data-group=""  data-thumbnail="" data-width="480" data-height="320" title=""><i class="fa fa-play"></i></a>
+												<a href="'.esc_url($video_url).'" class="html5lightbox" data-group=""  data-thumbnail="" data-width="480" data-height="320"><i class="fa fa-play"></i></a>
 											</div>
 											';
 						}
@@ -51,13 +51,13 @@
 							$media_output = '<a href="'.get_the_permalink().'">'.get_the_post_thumbnail(get_the_ID(), "full").'</a>';
 						}
 				}
-				echo $media_output;
+				echo ''.$media_output;
 			?>
 		</div>
 		<div class="bt-content">
 			<h3 class="bt-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 			<div class="bt-excerpt"><?php echo consulta_custom_excerpt($excerpt_lenght, $excerpt_more); ?></div>
-			<a href="<?php the_permalink(); ?>"><?php echo $readmore_text; ?></a>
+			<a href="<?php the_permalink(); ?>"><?php echo ''.$readmore_text; ?></a>
 		</div>
 	</div>
 </article>

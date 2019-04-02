@@ -27,9 +27,9 @@ function consulta_service_box_func($atts, $content = null) {
 					if($style == 'style3' || $style == 'style4' || $style == 'style4_1' || $style == 'style5') {
 						$attachment_image = wp_get_attachment_image_src($image_icon, 'full', false); 
 						if($attachment_image[0]) {
-							if($style == 'style3') echo '<div class="bt-thumb"><img src="'.esc_url($attachment_image[0]).'" alt=""/></div>';
+							if($style == 'style3') echo '<div class="bt-thumb"><img src="'.esc_url($attachment_image[0]).'" alt="'.esc_attr__('thumb', 'consulta').'"/></div>';
 							if($style == 'style4' || $style == 'style4_1') echo '<div class="bt-thumb"><div class="bt-bg-img" style="background: url('.esc_url($attachment_image[0]).') no-repeat scroll center center / cover;"></div><div class="bt-overlay"></div><span class="bt-step-number">'.$number_step.'</span></div>';
-							if($style == 'style5') echo '<div class="bt-thumb"><img src="'.esc_url($attachment_image[0]).'" alt=""/></div>';
+							if($style == 'style5') echo '<div class="bt-thumb"><img src="'.esc_url($attachment_image[0]).'" alt="'.esc_attr__('thumb', 'consulta').'"/></div>';
 						}else {
 							if($style == 'style4' || $style == 'style4_1') echo '<div class="bt-thumb"><span class="bt-step-number">'.$number_step.'</span></div>';
 						}

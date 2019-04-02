@@ -27,7 +27,7 @@ class beoreo_Icon_Info_Widget extends WP_Widget {
 		
         ob_start();
 		
-        echo $before_widget;
+        echo ''.$before_widget;
 		if ( $column )
 				$getcol = (int) $column;
 				$col = 4;
@@ -58,7 +58,7 @@ class beoreo_Icon_Info_Widget extends WP_Widget {
 			<?php endif; ?>
         </div>
         <?php
-        echo $after_widget;
+        echo ''.$after_widget;
         echo ob_get_clean();
     }
 
@@ -81,7 +81,7 @@ class beoreo_Icon_Info_Widget extends WP_Widget {
 		?>
 		<p>
             <label for="<?php echo esc_attr($this->get_field_id('column')); ?>"><?php _e('Column:(col-md-1 -> col-md-12)', 'consulta'); ?></label>
-            <input class="widefat" id="<?php echo esc_attr($this->get_field_id('column')); ?>" name="<?php echo esc_attr($this->get_field_name('column')); ?>" value="<?php echo $column; ?>" />
+            <input class="widefat" id="<?php echo esc_attr($this->get_field_id('column')); ?>" name="<?php echo esc_attr($this->get_field_name('column')); ?>" value="<?php echo ''.$column; ?>" />
         </p>
             <p>
                 <label for="<?php echo esc_url($this->get_field_id('icon_fa_cc')); ?>"><?php _e('Icon:', 'consulta');
@@ -95,7 +95,7 @@ class beoreo_Icon_Info_Widget extends WP_Widget {
             </p>
         <p>
             <label for="<?php echo esc_attr($this->get_field_id('cl_class')); ?>"><?php _e('Extra Class:', 'consulta'); ?></label>
-            <input class="widefat" id="<?php echo esc_attr($this->get_field_id('cl_class')); ?>" name="<?php echo esc_attr($this->get_field_name('cl_class')); ?>" value="<?php echo $cl_class; ?>" />
+            <input class="widefat" id="<?php echo esc_attr($this->get_field_id('cl_class')); ?>" name="<?php echo esc_attr($this->get_field_name('cl_class')); ?>" value="<?php echo ''.$cl_class; ?>" />
         </p>
         <?php
     }

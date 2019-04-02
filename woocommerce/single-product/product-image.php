@@ -36,17 +36,17 @@ if ( has_post_thumbnail() ) {
 		$output .= '<div class="bt-slick-slider">';
 		foreach($image_ids as $image_id) {
 			$image_link = wp_get_attachment_url( $image_id );
-			$output .= '<img src="'.esc_url($image_link).'" alt=""/>';
+			$output .= '<img src="'.esc_url($image_link).'" alt="'.esc_attr__('thumb', 'consulta').'"/>';
 		}
 		$output .= '</div>';
 		
 		$output .= '<div class="bt-slick-slider-nav">';
 		foreach($image_ids as $image_id) {
 			$image_link = wp_get_attachment_url( $image_id );
-			$output .= '<div class="slider-item"><img src="'.esc_url($image_link).'" alt=""/></div>';
+			$output .= '<div class="slider-item"><img src="'.esc_url($image_link).'" alt="'.esc_attr__('thumb', 'consulta').'"/></div>';
 		}
 		$output .= '</div>';
-		echo $output;
+		echo ''.$output;
 	} else {
 		echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a href="%s" itemprop="image" class="woocommerce-main-image" title="%s" data-imagelightbox-thumbnail="">%s</a>', $image_link, $image_caption, $image ), $post->ID );
 	}

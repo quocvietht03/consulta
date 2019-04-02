@@ -15,7 +15,7 @@ $readmore_text = (int) isset($consulta_options['consulta_blog_post_readmore_text
 				if($link) {
 					$media_output = '<a class="bt-link" href="'.esc_url($link).'">'.$link.'</a>';
 				}
-				echo $media_output;
+				echo ''.$media_output;
 			?>
 		</div>
 		<ul class="bt-meta">
@@ -25,6 +25,6 @@ $readmore_text = (int) isset($consulta_options['consulta_blog_post_readmore_text
 			<li><?php the_terms( get_the_ID(), 'category', 'Category: ', ', ' ); ?></li>
 		</ul>
 		<div class="bt-excerpt"><?php the_excerpt(); ?></div>
-		<a class="bt-readmore" href="<?php the_permalink(); ?>"><?php echo $readmore_text; ?></a>
+		<a class="bt-readmore" href="<?php the_permalink(); ?>"><?php echo ''.$readmore_text; ?></a>
 	</div>
 </article>

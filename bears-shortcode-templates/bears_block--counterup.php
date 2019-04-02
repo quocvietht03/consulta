@@ -16,7 +16,7 @@ wp_enqueue_script('waypoints.min', consulta_URI_PATH . '/assets/js/waypoints.min
 <div id="<?php echo esc_attr( $_id ) ?>" class="bs-block <?php echo esc_attr( $_class ); ?>">
 	<div class="bs-counter">
 		<span class="bs-number"><?php echo number_format($atts['template_params']['number']); ?></span>
-		<div class="bs-title"><?php echo $atts['template_params']['title']; ?></div>
+		<div class="bs-title"><?php echo ''.$atts['template_params']['title']; ?></div>
 	</div>
 </div>
 

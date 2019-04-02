@@ -11,7 +11,7 @@
 				if($quote_content) {
 					$media_output .= '<div class="bt-overlay"><blockquote>'.$quote_content.'</blockquote></div>';
 				}
-				echo $media_output;
+				echo ''.$media_output;
 			?>
 		</div>
 		<ul class="bt-meta">

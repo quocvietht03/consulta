@@ -37,7 +37,7 @@ $readmore_text = (int) isset($consulta_options['consulta_blog_post_readmore_text
 											if (has_post_thumbnail()) {
 												$media_output = '<a href="'.get_the_permalink().'">'.get_the_post_thumbnail(get_the_ID(), "full").'</a>';
 											}
-											echo $media_output;
+											echo ''.$media_output;
 										?>
 									</div>
 									<ul class="bt-meta">
@@ -47,7 +47,7 @@ $readmore_text = (int) isset($consulta_options['consulta_blog_post_readmore_text
 										<li><?php the_terms( get_the_ID(), 'portfolio_category', 'Category: ', ', ' ); ?></li>
 									</ul>
 									<div class="bt-excerpt"><?php the_excerpt(); ?></div>
-									<a class="bt-readmore" href="<?php the_permalink(); ?>"><?php echo $readmore_text; ?></a>
+									<a class="bt-readmore" href="<?php the_permalink(); ?>"><?php echo ''.$readmore_text; ?></a>
 								</div>
 							</article>
 							<?php

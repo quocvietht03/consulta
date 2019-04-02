@@ -16,7 +16,7 @@ $readmore_text = (int) isset($consulta_options['consulta_blog_post_readmore_text
 					$audio_url = get_post_meta(get_the_ID(), 'consulta_post_audio_url', true);
 					if($audio_url) echo do_shortcode('[audio '.$audio_type.'="'.$audio_url.'"][/audio]');
 				} 
-				echo $media_output;
+				echo ''.$media_output;
 			?>
 		</div>
 		<ul class="bt-meta">
@@ -26,6 +26,6 @@ $readmore_text = (int) isset($consulta_options['consulta_blog_post_readmore_text
 			<li><?php the_terms( get_the_ID(), 'category', 'Category: ', ', ' ); ?></li>
 		</ul>
 		<div class="bt-excerpt"><?php the_excerpt(); ?></div>
-		<a class="bt-readmore" href="<?php the_permalink(); ?>"><?php echo $readmore_text; ?></a>
+		<a class="bt-readmore" href="<?php the_permalink(); ?>"><?php echo ''.$readmore_text; ?></a>
 	</div>
 </article>

@@ -19,7 +19,7 @@
 								$attachment_image = wp_get_attachment_image_src($attachment_id, 'full', false);
 								if($attachment_image[0]){
 									$media_output .= '<div class="item bt-gallery '.esc_attr($cl_active).'">
-														<img src="'.esc_url($attachment_image[0]).'" alt="" />
+														<img src="'.esc_url($attachment_image[0]).'" alt="'.esc_attr__('thumb', 'consulta').'" />
 													</div>';
 								}
 							}
@@ -51,7 +51,7 @@
 							$media_output = '<a href="'.get_the_permalink().'">'.get_the_post_thumbnail(get_the_ID(), "full").'</a>';
 						}
 				}
-				echo $media_output;
+				echo ''.$media_output;
 			?>
 		</div>
 		<div class="bt-content">
@@ -68,7 +68,7 @@
 				<li><a href="<?php comments_link(); ?>"><?php comments_number( '<i class="fa fa-comment"></i> 0', '<i class="fa fa-comment"></i> 1', '<i class="fa fa-comment"></i> %' ); ?></a></li>
 				<li><?php consulta_post_favorite(); ?></li>
 			</ul>
-			<a href="<?php the_permalink(); ?>"><?php echo $readmore_text; ?></a>
+			<a href="<?php the_permalink(); ?>"><?php echo ''.$readmore_text; ?></a>
 		</div>
 	</div>
 </article>

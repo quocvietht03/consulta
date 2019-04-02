@@ -20,7 +20,7 @@ $readmore_text = (int) isset($consulta_options['consulta_blog_post_readmore_text
 						$attachment_image = wp_get_attachment_image_src($attachment_id, 'full', false);
 						if($attachment_image[0]){
 							$media_output .= '<div class="item bt-gallery '.esc_attr($cl_active).'">
-												<img src="'.esc_url($attachment_image[0]).'" alt="" />
+												<img src="'.esc_url($attachment_image[0]).'" alt="'.esc_attr__('thumb', 'consulta').'" />
 											</div>';
 						}
 					}
@@ -33,7 +33,7 @@ $readmore_text = (int) isset($consulta_options['consulta_blog_post_readmore_text
 										</a>
 									</div>';
 				}
-				echo $media_output;
+				echo ''.$media_output;
 			?>
 		</div>
 		<ul class="bt-meta">
@@ -43,6 +43,6 @@ $readmore_text = (int) isset($consulta_options['consulta_blog_post_readmore_text
 			<li><?php the_terms( get_the_ID(), 'category', 'Category: ', ', ' ); ?></li>
 		</ul>
 		<div class="bt-excerpt"><?php the_excerpt(); ?></div>
-		<a class="bt-readmore" href="<?php the_permalink(); ?>"><?php echo $readmore_text; ?></a>
+		<a class="bt-readmore" href="<?php the_permalink(); ?>"><?php echo ''.$readmore_text; ?></a>
 	</div>
 </article>

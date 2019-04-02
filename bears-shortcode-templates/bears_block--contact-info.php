@@ -19,7 +19,7 @@ $_class 	= sprintf( 'bs-block-layout-%s %s', str_replace( '.php', '', $atts['tem
 		?>
 	</div>
 	<div class="bs-content">
-		<h4 class="bs-title"><a href="<?php echo esc_url($atts['template_params']['extra_link']); ?>"><?php echo $atts['template_params']['title']; ?></a></h4>
-		<div class="bs-desc"><?php echo $atts['template_params']['content']; ?></div>
+		<h4 class="bs-title"><a href="<?php echo esc_url($atts['template_params']['extra_link']); ?>"><?php echo ''.$atts['template_params']['title']; ?></a></h4>
+		<div class="bs-desc"><?php echo ''.$atts['template_params']['content']; ?></div>
 	</div>
 </div>

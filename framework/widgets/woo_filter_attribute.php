@@ -497,7 +497,7 @@ class consulta_Woo_Filter_Attribute extends WC_Widget {
 
 					echo ( $count > 0 || $option_is_set ) ? '<a href="' . esc_url( apply_filters( 'woocommerce_layered_nav_link', $link ) ) . '">' : '<span>';
 
-					echo $term->name;
+					echo ''.$term->name;
 
 					echo ( $count > 0 || $option_is_set ) ? '</a>' : '</span>';
 

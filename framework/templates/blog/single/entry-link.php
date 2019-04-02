@@ -13,7 +13,7 @@
 				if($link) {
 					$media_output = '<a class="bt-link" href="'.esc_url($link).'">'.$link.'</a>';
 				}
-				echo $media_output;
+				echo ''.$media_output;
 			?>
 		</div>
 		<ul class="bt-meta">

@@ -29,7 +29,7 @@ class beoreo_Icon_Text_Widget extends WP_Widget {
 		
         ob_start();
 		
-        echo $before_widget;
+        echo ''.$before_widget;
 		if ( $column )
 				$getcol = (int) $column;
 				$col = 4;
@@ -54,7 +54,7 @@ class beoreo_Icon_Text_Widget extends WP_Widget {
             for ($i = 1; $i <= 3; $i++) {
                 if($icon_fa_cc[$i]):
                 ?>
-				<div class="col-md-<?php echo $col ?> col-sm-<?php echo $col ?> icocc">
+				<div class="col-md-<?php echo ''.$col ?> col-sm-<?php echo ''.$col ?> icocc">
 					<div class="p-float-social">
 						<div class="icon"><i class="<?php echo esc_attr($icon_fa_cc[$i]); ?>"></i></div>
 						<div class="text"><?php echo html_entity_decode($text_fa_cc[$i]); ?></div>
@@ -64,7 +64,7 @@ class beoreo_Icon_Text_Widget extends WP_Widget {
         <?php } ?>
         </div>
         <?php
-        echo $after_widget;
+        echo ''.$after_widget;
         echo ob_get_clean();
     }
 
@@ -91,25 +91,25 @@ class beoreo_Icon_Text_Widget extends WP_Widget {
 		?>
 		<p>
             <label for="<?php echo esc_attr($this->get_field_id('column')); ?>"><?php _e('Column:', 'consulta'); ?></label>
-            <input class="widefat" id="<?php echo esc_attr($this->get_field_id('column')); ?>" name="<?php echo esc_attr($this->get_field_name('column')); ?>" value="<?php echo $column; ?>" />
+            <input class="widefat" id="<?php echo esc_attr($this->get_field_id('column')); ?>" name="<?php echo esc_attr($this->get_field_name('column')); ?>" value="<?php echo ''.$column; ?>" />
         </p>
         <?php
         for ($i = 1; $i <= 3; $i++) {
             ?>
             <p>
                 <label for="<?php echo esc_url($this->get_field_id('icon_fa_cc_' . $i)); ?>"><?php _e('Icon:', 'consulta');
-            echo $i; ?></label>
+            echo ''.$i; ?></label>
                 <input class="widefat" id="<?php echo esc_attr($this->get_field_id('icon_fa_cc_' . $i)); ?>" name="<?php echo esc_attr($this->get_field_name('icon_fa_cc_' . $i)); ?>" type="text" value="<?php echo esc_attr($icon_fa_cc[$i]); ?>" />
             </p>
             <p>
                 <label for="<?php echo esc_url($this->get_field_id('text_fa_cc_' . $i)); ?>"><?php _e('Text:', 'consulta');
-            echo $i; ?></label>
+            echo ''.$i; ?></label>
                 <input class="widefat" id="<?php echo esc_attr($this->get_field_id('text_fa_cc_' . $i)); ?>" name="<?php echo esc_attr($this->get_field_name('text_fa_cc_' . $i)); ?>" type="text" value="<?php echo esc_attr($text_fa_cc[$i]); ?>" />
             </p>
         <?php } ?>
         <p>
             <label for="<?php echo esc_attr($this->get_field_id('cl_class')); ?>"><?php _e('Extra Class:', 'consulta'); ?></label>
-            <input class="widefat" id="<?php echo esc_attr($this->get_field_id('cl_class')); ?>" name="<?php echo esc_attr($this->get_field_name('cl_class')); ?>" value="<?php echo $cl_class; ?>" />
+            <input class="widefat" id="<?php echo esc_attr($this->get_field_id('cl_class')); ?>" name="<?php echo esc_attr($this->get_field_name('cl_class')); ?>" value="<?php echo ''.$cl_class; ?>" />
         </p>
         <?php
     }
