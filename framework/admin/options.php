@@ -324,13 +324,6 @@
 				'default'  => false,
 			),
 			array(
-				'id'       => 'smooth_scroll',
-				'type'     => 'switch',
-				'title'    => __( 'Smooth Scroll', 'consulta' ),
-				'subtitle' => __( 'Enable/Disable smooth scroll.', 'consulta' ),
-				'default'  => false,
-			),
-			array(
 				'id'       => 'style_selector',
 				'type'     => 'switch',
 				'title'    => __( 'Style Selector', 'consulta' ),

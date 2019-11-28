@@ -264,10 +264,6 @@ function consulta_enqueue_scripts() {
 	wp_enqueue_script( 'html5lightbox', consulta_URI_PATH.'/assets/vendors/html5lightbox/html5lightbox.js', array('jquery'), '', true  );
 	wp_enqueue_script( 'consulta-main', consulta_URI_PATH.'/assets/js/main.js', array('jquery'), '', true  );
 	
-	if(isset($consulta_options["smooth_scroll"])&&$consulta_options["smooth_scroll"]) {
-		wp_enqueue_script( 'smoothScroll', consulta_URI_PATH.'/assets/js/SmoothScroll.js', array('jquery'), '', true  );
-	}
-	
 	$preset_color = (isset($consulta_options['preset_color'])&&$consulta_options['preset_color'])?$consulta_options['preset_color']: 'default';
 	wp_enqueue_style( 'consulta-preset', consulta_URI_PATH.'/assets/css/presets/'.$preset_color.'.css', false );
 	if(isset($consulta_options["style_selector"])&&$consulta_options["style_selector"]) {

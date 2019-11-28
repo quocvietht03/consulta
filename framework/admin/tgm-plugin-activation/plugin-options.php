@@ -37,7 +37,7 @@ function consulta_register_required_plugins() {
      * Array of plugin arrays. Required keys are name and slug.
      * If the source is NOT from the .org repo, then source is also required.
      */
-	$root = 'http://bearsthemespremium.com/install/plugin/';
+	$root = 'http://beplusthemes.com/install/plugin/';
     $plugins = array(
 		array(
             'name'               => esc_html__('Bears Core', 'consulta'),

@@ -1,6 +1,6 @@
 /*
 Theme Name: Consulta
-Theme URI: http://bearsthemespremium.com/theme/consulta
+Theme URI: https://consulta.beplusthemes.com/
 Author: bearsthemes
 Author URI: http://bearsthemes.com
 Version: 2.1
@@ -10,7 +10,88 @@ Tags: two-columns,left-sidebar, right-sidebar, custom-background, custom-header,
 Description: Consulta is a fully configurable and easy to use responsive WordPress Theme  with a lot of great features.
 Text Domain: consulta
 */
-
+/* SCREEN */
+/* COLOR */
+/*#FF2B42*/
+/* ANIMATION */
+/* TYPOGRAPHY */
+/*
+* Component module
+*/
+/* + TYPOGRAPHY */
+/* + COLOR */
+/* + INPUT */
+/* + ICON */
+/* + BUTTON */
+/* + UTILITIES */
+/* + SECTION */
+/*
+* Common module
+*/
+/* + RESERVATION AND CONTACT */
+/*
+* Module
+*/
+/* + HEADER */
+/* + FOOTER */
+/* + TEAM */
+/* + SERVICE */
+/* + MEMBERSHIP */
+/* + TESTIMONIAL */
+/* + HOME */
+/* + ABOUT */
+/* + SHOP */
+/* + SPACE */
+/* + ADVERTISE */
+/* + BLOG */
+/* + OTHER PAGE */
+/*
+* Component module
+*/
+/* TYPOGRAPHY */
+/* COLOR */
+/* INPUT */
+/* ICON */
+/* BUTTON */
+/* UTILITIES */
+/* Reset */
+/* SECTION */
+/*
+* Module
+*/
+/* HEADER */
+/* FOOTER */
+/* SERVICE */
+/* BLOG */
+/* PORTFOLIO */
+/* TEAM */
+/* TESTIMONIAL */
+/* TESTIMONIAL */
+/* + SHOP */
+/* ANIMATION */
+/* DIV */
+/*!
+ * jQuery UI CSS Framework 1.11.3
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/theming/
+ *
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Lucida%20Grande%2CLucida%20Sans%2CArial%2Csans-serif&fwDefault=bold&fsDefault=1.1em&cornerRadius=5px&bgColorHeader=5c9ccc&bgTextureHeader=gloss_wave&bgImgOpacityHeader=55&borderColorHeader=4297d7&fcHeader=ffffff&iconColorHeader=d8e7f3&bgColorContent=fcfdfd&bgTextureContent=inset_hard&bgImgOpacityContent=100&borderColorContent=a6c9e2&fcContent=222222&iconColorContent=469bdd&bgColorDefault=dfeffc&bgTextureDefault=glass&bgImgOpacityDefault=85&borderColorDefault=c5dbec&fcDefault=2e6e9e&iconColorDefault=6da8d5&bgColorHover=d0e5f5&bgTextureHover=glass&bgImgOpacityHover=75&borderColorHover=79b7e7&fcHover=1d5987&iconColorHover=217bc0&bgColorActive=f5f8f9&bgTextureActive=inset_hard&bgImgOpacityActive=100&borderColorActive=79b7e7&fcActive=e17009&iconColorActive=f9bd01&bgColorHighlight=fbec88&bgTextureHighlight=flat&bgImgOpacityHighlight=55&borderColorHighlight=fad42e&fcHighlight=363636&iconColorHighlight=2e83ff&bgColorError=fef1ec&bgTextureError=glass&bgImgOpacityError=95&borderColorError=cd0a0a&fcError=cd0a0a&iconColorError=cd0a0a&bgColorOverlay=aaaaaa&bgTextureOverlay=flat&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=aaaaaa&bgTextureShadow=flat&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=8px&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px
+ */
+/* Component containers
+----------------------------------*/
+/* Interaction states
+----------------------------------*/
+/* Interaction Cues
+----------------------------------*/
+/* Overlays */
+/* with multiple calendars */
+/* RTL support */
+/*Comment Form*/
 .easing-animation {
   -wekbit-transition:all 0.4s;
   -moz-transition:all 0.4s;
@@ -23896,13 +23977,11 @@ body .bs-woofavorite #bs-woofavorite-items .owl-controls .owl-nav > div:hover { 
   -moz-border-radius:30px;
   border-radius:30px;
 }
-.wpb-js-composer .bt-progress-style1.vc_progress_bar .vc_single_bar .vc_label { padding:0; }
-.wpb-js-composer .bt-progress-style1.vc_progress_bar .vc_single_bar .vc_label .vc_inner {
+.wpb-js-composer .bt-progress-style1.vc_progress_bar .vc_single_bar .vc_label {
+  padding:0;
   position:relative;
   height:40px;
   padding:0 30px;
-}
-.wpb-js-composer .bt-progress-style1.vc_progress_bar .vc_single_bar .vc_label .vc_inner .vc_label_title {
   font-family:Montserrat;
   font-size:13px;
   font-weight:700;
@@ -23910,9 +23989,9 @@ body .bs-woofavorite #bs-woofavorite-items .owl-controls .owl-nav > div:hover { 
   letter-spacing:0.04em;
   color:#ffffff;
 }
-.wpb-js-composer .bt-progress-style1.vc_progress_bar .vc_single_bar .vc_label .vc_inner .vc_label_units {
+.wpb-js-composer .bt-progress-style1.vc_progress_bar .vc_single_bar .vc_label .vc_label_units {
   position:absolute;
-  right:-10px;
+  right:0;
   top:2px;
   width:36px;
   height:36px;
@@ -23945,12 +24024,10 @@ body .bs-woofavorite #bs-woofavorite-items .owl-controls .owl-nav > div:hover { 
 }
 .wpb-js-composer .bt-progress-style2.vc_progress_bar .vc_single_bar .vc_label {
   position:absolute;
-  bottom:20px;
+  bottom:30px;
   left:0;
   width:100%;
   padding:0;
-}
-.wpb-js-composer .bt-progress-style2.vc_progress_bar .vc_single_bar .vc_label .vc_inner {
   font-family:Montserrat;
   font-size:15px;
   font-weight:700;
@@ -23960,7 +24037,7 @@ body .bs-woofavorite #bs-woofavorite-items .owl-controls .owl-nav > div:hover { 
   position:relative;
   width:100% !important;
 }
-.wpb-js-composer .bt-progress-style2.vc_progress_bar .vc_single_bar .vc_label .vc_inner .vc_label_units { float:right; }
+.wpb-js-composer .bt-progress-style2.vc_progress_bar .vc_single_bar .vc_label .vc_label_units { float:right; }
 .wpb-js-composer .bt-progress-style2.vc_progress_bar .vc_single_bar .vc_bar {
   height:7px;
   background:#00abc9;
@@ -23977,8 +24054,8 @@ body .bs-woofavorite #bs-woofavorite-items .owl-controls .owl-nav > div:hover { 
   -moz-border-radius:0;
   border-radius:0;
 }
-.wpb-js-composer .bt-progress-style3.vc_progress_bar .vc_single_bar .vc_label { padding:8px 25px; }
-.wpb-js-composer .bt-progress-style3.vc_progress_bar .vc_single_bar .vc_label .vc_inner {
+.wpb-js-composer .bt-progress-style3.vc_progress_bar .vc_single_bar .vc_label {
+  padding:0;
   font-family:Montserrat;
   font-size:12px;
   font-weight:700;
@@ -23986,14 +24063,10 @@ body .bs-woofavorite #bs-woofavorite-items .owl-controls .owl-nav > div:hover { 
   letter-spacing:0.1em;
   color:#ffffff;
   position:relative;
-}
-.wpb-js-composer .bt-progress-style3.vc_progress_bar .vc_single_bar .vc_label .vc_inner .vc_label_title {
-  position:absolute;
-  top:-35px;
+  top:-25px;
   left:0;
   font-family:Lato;
-  font-size:11px;
-  font-weight:900;
+  font-size:14px;
   color:#141414;
 }
 .wpb-js-composer .bt-progress-style3.vc_progress_bar .vc_single_bar .vc_bar {
@@ -24014,12 +24087,10 @@ body .bs-woofavorite #bs-woofavorite-items .owl-controls .owl-nav > div:hover { 
 }
 .wpb-js-composer .bt-progress-style4.vc_progress_bar .vc_single_bar .vc_label {
   position:absolute;
-  bottom:20px;
+  bottom:35px;
   left:0;
   width:100%;
   padding:0;
-}
-.wpb-js-composer .bt-progress-style4.vc_progress_bar .vc_single_bar .vc_label .vc_inner {
   font-family:Montserrat;
   font-size:14px;
   font-weight:700;
@@ -24029,9 +24100,7 @@ body .bs-woofavorite #bs-woofavorite-items .owl-controls .owl-nav > div:hover { 
   position:relative;
   width:100% !important;
 }
-.wpb-js-composer .bt-progress-style4.vc_progress_bar .vc_single_bar .vc_label .vc_inner .vc_label_title:after { content:" - "; }
-.wpb-js-composer .bt-progress-style4.vc_progress_bar .vc_single_bar .vc_label .vc_inner .vc_label_units:before { content:"("; }
-.wpb-js-composer .bt-progress-style4.vc_progress_bar .vc_single_bar .vc_label .vc_inner .vc_label_units:after { content:")"; }
+.wpb-js-composer .bt-progress-style4.vc_progress_bar .vc_single_bar .vc_label .vc_label_units:before { content:" - "; }
 .wpb-js-composer .bt-progress-style4.vc_progress_bar .vc_single_bar .vc_bar {
   height:17px;
   background:#00abc9;
@@ -24055,12 +24124,6 @@ body .bs-woofavorite #bs-woofavorite-items .owl-controls .owl-nav > div:hover { 
   left:0;
   width:100%;
   padding:0;
-}
-.wpb-js-composer .bt-progress-style5.vc_progress_bar .vc_single_bar .vc_label .vc_inner {
-  position:relative;
-  width:100% !important;
-}
-.wpb-js-composer .bt-progress-style5.vc_progress_bar .vc_single_bar .vc_label .vc_inner .vc_label_title {
   font-family:Montserrat;
   font-size:16px;
   font-weight:700;
@@ -24068,7 +24131,7 @@ body .bs-woofavorite #bs-woofavorite-items .owl-controls .owl-nav > div:hover { 
   letter-spacing:0.05em;
   color:#2f2933;
 }
-.wpb-js-composer .bt-progress-style5.vc_progress_bar .vc_single_bar .vc_label .vc_inner .vc_label_units {
+.wpb-js-composer .bt-progress-style5.vc_progress_bar .vc_single_bar .vc_label .vc_label_units {
   float:right;
   font-size:14px;
   letter-spacing:0;
@@ -24081,11 +24144,11 @@ body .bs-woofavorite #bs-woofavorite-items .owl-controls .owl-nav > div:hover { 
   -moz-border-radius:10px;
   border-radius:10px;
 }
-.wpb-js-composer .bt-progress-style5.vc_progress_bar.bt-light .vc_single_bar .vc_label .vc_inner .vc_label_title {
+.wpb-js-composer .bt-progress-style5.vc_progress_bar.bt-light .vc_single_bar .vc_label {
   font-size:13px;
   color:#59c8dc;
 }
-.wpb-js-composer .bt-progress-style5.vc_progress_bar.bt-light .vc_single_bar .vc_label .vc_inner .vc_label_units { color:#ffffff; }
+.wpb-js-composer .bt-progress-style5.vc_progress_bar.bt-light .vc_single_bar .vc_label .vc_label_units { color:#ffffff; }
 .wpb-js-composer .bt-progress-style6.vc_progress_bar .vc_single_bar {
   position:relative;
   height:32px;
@@ -24102,24 +24165,14 @@ body .bs-woofavorite #bs-woofavorite-items .owl-controls .owl-nav > div:hover { 
   left:0;
   width:100%;
   padding:0;
-}
-.wpb-js-composer .bt-progress-style6.vc_progress_bar .vc_single_bar .vc_label .vc_inner {
-  position:relative;
   font-family:Montserrat;
-  font-size:11px;
+  font-size:14px;
   line-height:24px;
   letter-spacing:0.1em;
   color:#6f6f6f;
   width:100% !important;
 }
-.wpb-js-composer .bt-progress-style6.vc_progress_bar .vc_single_bar .vc_label .vc_inner .vc_label_title:before {
-  content:"\f0da";
-  font-family:FontAwesome;
-  display:inline-block;
-  font-size:13px;
-  margin-right:10px;
-}
-.wpb-js-composer .bt-progress-style6.vc_progress_bar .vc_single_bar .vc_label .vc_inner .vc_label_units {
+.wpb-js-composer .bt-progress-style6.vc_progress_bar .vc_single_bar .vc_label .vc_label_units {
   float:right;
   font-size:12px;
   color:#141414;
