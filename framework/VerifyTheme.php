@@ -10,7 +10,7 @@ if (!class_exists('BearsthemesCommunicator')):
   class BearsthemesCommunicator{
     var $baseUrl;
     var $message;
-    function __construct($baseUrl='http://api.beplusthemes.com/') {
+    function __construct($baseUrl='http://api.beplusprojects.com') {
         $this->baseUrl = $baseUrl;
     }
 
@@ -31,7 +31,7 @@ if (!class_exists('BearsthemesCommunicator')):
 
         if ( is_wp_error( $response ) ) {
            $error_message = $response->get_error_message();
-           $this->message = __("Something went wrong on unregister your domain: ", "consulta").$error_message;
+           $this->message = __("Something went wrong on unregister your domain: ", "verifytheme").$error_message;
            return null;
         } else {
            return true;
@@ -54,7 +54,7 @@ if (!class_exists('BearsthemesCommunicator')):
 
       if ( is_wp_error( $response ) ) {
          $error_message = $response->get_error_message();
-         $this->message = __("Something went wrong on unregister your domain: ", "consulta").$error_message;
+         $this->message = __("Something went wrong on unregister your domain: ", "verifytheme").$error_message;
          return null;
       } else {
          return true;
@@ -73,7 +73,7 @@ if (!class_exists('BearsthemesCommunicator')):
       $response = wp_remote_get( $this->baseUrl.'/api/v1/registered-by-purchase-code/'.$purchaseCode, array( 'timeout' => 50 ) );
       if ( is_wp_error( $response ) ) {
          $error_message = $response->get_error_message();
-         $this->message = __("Something went wrong on get connected domain with your purchase code: ", "consulta").$error_message;
+         $this->message = __("Something went wrong on get connected domain with your purchase code: ", "verifytheme").$error_message;
          return null;
       } else {
          $result = json_decode($response['body']);
@@ -91,7 +91,7 @@ if (!class_exists('BearsthemesCommunicator')):
       $response = wp_remote_get( $this->baseUrl.'/api/v1/verify-purchase-code/'.$purchaseCode, array( 'timeout' => 50 ) );
       if ( is_wp_error( $response ) ) {
          $error_message = $response->get_error_message();
-         $this->message = __("Something went wrong on get purchase information: ", "consulta").$error_message;
+         $this->message = __("Something went wrong on get purchase information: ", "verifytheme").$error_message;
          return null;
       } else {
          $result = json_decode($response['body']);
@@ -128,7 +128,7 @@ function isLocalhost($server_name){
 
 function isInstallationLegit( $data = false ) {
   $communicator = new BearsthemesCommunicator();
-  $data = !$data ? get_option('verifytheme_settings') : $data;
+  $data = !$data ? get_option('_verifytheme_settings') : $data;
   if(!$data) return false;
   $__verify = get_option('__verify');
   if( $__verify && $__verify == ITEM_ID ) return true;
@@ -184,7 +184,7 @@ function licenseNeedsDeactivation( $toolkitData ) {
 		$connected_domain = $communicator->getConnectedDomains( $toolkitData[ 'purchase_code' ] );
 
 		if ( ! $connected_domain ) {
-			delete_option( 'verifytheme_settings' );
+			delete_option( '_verifytheme_settings' );
 			return true;
 		} else {
 			return false;
@@ -210,7 +210,7 @@ class VerifyTheme {
     }
     // check theme activate
     function isInstallationLegit(){
-      $toolkitData = get_option('verifytheme_settings');;
+      $toolkitData = get_option('_verifytheme_settings');;
       $installationLegit = isInstallationLegit();
       if ( $toolkitData && $installationLegit ) $this->isInstallationLegit = true;
       return $this->isInstallationLegit;
@@ -227,9 +227,9 @@ class VerifyTheme {
   	function verifytheme_admin_script() {
       wp_register_style( 'verifytheme', get_stylesheet_directory_uri() . '/framework/verifytheme.css', false );
       wp_enqueue_style( 'verifytheme' );
-      if(!$this->isInstallationLegit){
+	  if(!$this->isInstallationLegit){
         $setting_page = admin_url('options-general.php?page=verifytheme_settings');
-        $message = esc_html__( "Important notice: In order to receive all benefits of our theme, you need to activate your copy of the theme. \nBy activating the theme license you will unlock premium options - import demo data, install, update plugins and official support. Please visit Envato Settings page to activate your copy of the theme", 'consulta' );
+        $message = esc_html__( "Important notice: In order to receive all benefits of our theme, you need to activate your copy of the theme. \nBy activating the theme license you will unlock premium options - import demo data, install, update plugins and official support. Please visit Envato Settings page to activate your copy of the theme", 'verifytheme' );
         wp_register_script( 'verifytheme', get_stylesheet_directory_uri() . '/framework/verifytheme.js', false );
         wp_localize_script(
   				'verifytheme',
@@ -262,11 +262,11 @@ class VerifyTheme {
      */
     public function verifytheme_settings_page(){
         $communicator = new BearsthemesCommunicator();
-        $toolkitData = get_option('verifytheme_settings');
+        $toolkitData = get_option('_verifytheme_settings');
         if ( isset( $_POST[ 'change_license' ] ) && class_exists( 'BearsthemesCommunicator' ) ) {
           $is_deregistering_license = true;
 					$communicator->unRegisterDomains( $toolkitData[ 'purchase_code' ] );
-					delete_option( 'verifytheme_settings' );
+					delete_option( '_verifytheme_settings' );
           delete_option( '__verify', ITEM_ID);
 				}
         $license_already_in_use = false;
@@ -290,14 +290,14 @@ class VerifyTheme {
         $type = 'primary';
         $name = 'submit';
         $wrap = true;
-        $this->options = get_option( 'verifytheme_settings' );
+        $this->options = get_option( '_verifytheme_settings' );
         ?>
         <div class="wrap verifytheme_wrap">
             <form class="verifytheme_settings_form" method="post" action="options.php">
               <?php
                   // This prints out all hidden setting fields
-                  settings_fields( 'verifytheme_settings' );
-                  do_settings_sections( 'verifytheme_settings' );
+                  settings_fields( '_verifytheme_settings' );
+                  do_settings_sections( '_verifytheme_settings' );
                   submit_button($register_button_text, $type, $name, $wrap, $other_attributes);
               ?>
               <?php if ( $toolkitData && ! $is_deregistering_license && ! $license_already_in_use ) : ?>
@@ -318,8 +318,8 @@ class VerifyTheme {
     public function verifytheme_page_init()
     {
         register_setting(
-            'verifytheme_settings', // Option group
-            'verifytheme_settings', // Option name
+            '_verifytheme_settings', // Option group
+            '_verifytheme_settings', // Option name
             array( $this, 'verifytheme_sanitize' ) // Sanitize
         );
 
@@ -327,14 +327,14 @@ class VerifyTheme {
             'verifytheme_general_section', // ID
             'Envato Settings', // Title
             array( $this, 'print_section_info' ), // Callback
-            'verifytheme_settings' // Page
+            '_verifytheme_settings' // Page
         );
 
         add_settings_field(
             'purchase_code',
             'Purchase code',
             array( $this, 'verifytheme_purchase_code_callback' ),
-            'verifytheme_settings',
+            '_verifytheme_settings',
             'verifytheme_general_section'
         );
     }
@@ -348,7 +348,7 @@ class VerifyTheme {
     {
         $new_input = array();
         if( isset( $input['purchase_code'] ) ) $new_input['purchase_code'] = sanitize_text_field( $input['purchase_code'] );
-        $register_error = get_settings_errors('verifytheme_settings');
+        $register_error = get_settings_errors('_verifytheme_settings');
         $message = '';
         $type = 'error';
         $data = array();
@@ -362,7 +362,7 @@ class VerifyTheme {
           if($communicator->message){
             $message .= $communicator->message;
           }else{
-            $message .= __("Invalid purchase code<br />","consulta");
+            $message .= __("Invalid purchase code<br />","verifytheme");
           }
         }
         $connected_domain = $communicator->getConnectedDomains( $new_input['purchase_code'] );
@@ -370,7 +370,7 @@ class VerifyTheme {
         if(!empty($message)):
           if(!$register_error):
             add_settings_error(
-                'verifytheme_settings',
+                '_verifytheme_settings',
                 esc_attr( 'settings_updated' ),
                 $message,
                 $type
@@ -391,7 +391,7 @@ class VerifyTheme {
             $message .= sprintf(esc_html__('Are you using this theme for a new site? Please purchase a %s ', 'verifytheme' ), '<a tabindex="-1" href="' . esc_url( 'http://themeforest.net/cart/add_items?ref=bearsthemes&item_ids=' ) .ITEM_ID.'" target="_blank">'.esc_html__('new license','verifytheme').'</a>');
             if(!$register_error):
               add_settings_error(
-                  'verifytheme_settings',
+                  '_verifytheme_settings',
                   esc_attr( 'settings_updated' ),
                   $message,
                   $type
@@ -410,7 +410,7 @@ class VerifyTheme {
     {
         printf(
             '%s<br />%s<a target="_blank" href="%s">%s</a>.</small>',
-            esc_html__('Themeforest provides purchase code for each theme you buy, and you’ll need it to verify and register your product (and to receive theme support).','verifytheme'),esc_html__('To download your purchase code, simply follow these steps at ','verifytheme'), esc_url('//beplusthemes.com/product-registration/'), esc_html__('here','verifytheme')
+            esc_html__('Themeforest provides purchase code for each theme you buy, and you’ll need it to verify and register your product (and to receive theme support).','verifytheme'),esc_html__('To download your purchase code, simply follow these steps at ','verifytheme'), esc_url('//bearsthemes.com/product-registration/'), esc_html__('here','verifytheme')
         );
     }
     /**
@@ -419,8 +419,8 @@ class VerifyTheme {
     public function verifytheme_purchase_code_callback()
     {
         printf(
-            '<input type="text" id="purchase_code" required name="verifytheme_settings[purchase_code]" value="%s" /><br /><small>%s<a target="_blank" href="%s">%s</a>.</small>',
-            isset( $this->options['purchase_code'] ) ? esc_attr( $this->options['purchase_code']) : '', esc_html__('Please insert your Envato purchase code. ','verifytheme'), esc_url('//beplusthemes.com/product-registration/'), esc_html__('More info','verifytheme')
+            '<input type="text" id="purchase_code" required name="_verifytheme_settings[purchase_code]" value="%s" /><br /><small>%s<a target="_blank" href="%s">%s</a>.</small>',
+            isset( $this->options['purchase_code'] ) ? esc_attr( $this->options['purchase_code']) : '', esc_html__('Please insert your Envato purchase code. ','verifytheme'), esc_url('//bearsthemes.com/product-registration/'), esc_html__('More info','verifytheme')
         );
     }
 }
