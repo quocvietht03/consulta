@@ -282,6 +282,37 @@
 
      */
 	
+	
+	$fonts = array (
+		'Lato, sans-serif'             => 'Lato',
+		'Montserrat, sans-serif'       => 'Montserrat',
+		'Montserrat Medium, sans-serif'       => 'Montserrat Medium',
+		'Montserrat SemiBold, sans-serif'       => 'Montserrat SemiBold',
+		'Montserrat ExtraBold, sans-serif'       => 'Montserrat ExtraBold',
+		'Noto Serif, serif'            => 'Noto Serif',
+		'Poppins, sans-serif'         => 'Poppins',
+		'Poppins Medium, sans-serif'          => 'Poppins Medium',
+		'Poppins SemiBold, sans-serif'        => 'Poppins SemiBold',
+		'Muli, sans-serif'         => 'Muli',
+		'Muli Medium, sans-serif'          => 'Muli Medium',
+		'Muli SemiBold, sans-serif'        => 'Muli SemiBold',
+		'Open Sans, sans-serif'         => 'Open Sans',
+		'Open Sans Light, sans-serif'         => 'Open Sans Light',
+		'Open Sans SemiBold, sans-serif'        => 'Open Sans SemiBold',
+		'Open Sans ExtraBold, sans-serif'        => 'Open Sans ExtraBold',
+		'Hind, sans-serif'         => 'Hind',
+		'Hind Medium, sans-serif'         => 'Hind Medium',
+		'Hind SemiBold, sans-serif'        => 'Hind SemiBold',
+		'Crimson Text, serif'         => 'Crimson Text',
+		'Crimson Text SemiBold, serif'        => 'Crimson Text SemiBold',
+		'Crimson Text SemiBold Italic, serif'        => 'Crimson Text SemiBold Italic',
+		'Source Sans Pro, sans-serif'         => 'Source Sans Pro',
+		'Source Sans Pro SemiBold, sans-serif'        => 'Source Sans Pro SemiBold',
+		'Just Another Hand, cursive'        => 'Just Another Hand',
+		'Scheherazade, serif'        => 'Scheherazade',
+		
+	);
+	
 	// -> START General
 	Redux::setSection( $opt_name, array(
 		'title'  => __( 'General', 'consulta' ),
@@ -429,6 +460,8 @@
 				'letter-spacing' => true,
 				'output'      => array('body'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#555555', 
@@ -449,6 +482,8 @@
 				'letter-spacing' => true,
 				'output'      => array('body h1, .bt-font-size-1'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#282828', 
@@ -469,6 +504,8 @@
 				'letter-spacing' => true,
 				'output'      => array('body h2, .bt-font-size-2'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#282828', 
@@ -489,6 +526,8 @@
 				'letter-spacing' => true,
 				'output'      => array('body h3, .bt-font-size-3'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#282828', 
@@ -509,6 +548,8 @@
 				'letter-spacing' => true,
 				'output'      => array('body h4, .bt-font-size-4'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#282828', 
@@ -529,6 +570,8 @@
 				'letter-spacing' => true,
 				'output'      => array('body h5, .bt-font-size-5'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#282828', 
@@ -549,6 +592,8 @@
 				'letter-spacing' => true,
 				'output'      => array('body h6, .bt-font-size-6'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#282828', 
@@ -686,6 +731,8 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-header-v1 .bt-menu-list > ul > li > a'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#ffffff', 
@@ -706,6 +753,8 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-stick-active .bt-header-v1 .bt-menu-list > ul > li > a'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#333333', 
@@ -725,6 +774,8 @@
 				'google'      => true, 
 				'font-backup' => true,
 				'letter-spacing' => true,
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'output'      	=> array('
 										.bt-header-v1 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > a, 
 										.bt-header-v1 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > ul > li > a, 
@@ -823,6 +874,8 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-header-v2 .bt-menu-list > ul > li > a'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#ffffff', 
@@ -843,6 +896,8 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-stick-active .bt-header-v2 .bt-menu-list > ul > li > a'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#333333', 
@@ -862,6 +917,8 @@
 				'google'      => true, 
 				'font-backup' => true,
 				'letter-spacing' => true,
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'output'      	=> array('
 										.bt-header-v2 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > a, 
 										.bt-header-v2 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > ul > li > a, 
@@ -949,6 +1006,8 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-header-v3 .bt-menu-list > ul > li > a, .bt-header-v3 .bt-header-menu .consulta_widget_mini_cart .bt-cart-header > a, .bt-header-v3 .bt-search-sidebar > a'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#333333',
@@ -969,6 +1028,8 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-stick-active .bt-header-v3 .bt-menu-list > ul > li > a, .bt-stick-active .bt-header-v3 .bt-header-menu .consulta_widget_mini_cart .bt-cart-header > a, .bt-stick-active .bt-header-v3 .bt-header-menu .bt-search-sidebar > a'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#333333', 
@@ -988,6 +1049,8 @@
 				'google'      => true, 
 				'font-backup' => true,
 				'letter-spacing' => true,
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'output'      => array('
 										.bt-header-v3 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > a, 
 										.bt-header-v3 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > ul > li > a, 
@@ -1084,6 +1147,8 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-header-v4 .bt-menu-list > ul > li > a, .bt-header-v4 .bt-header-menu .consulta_widget_mini_cart .bt-cart-header > a, .bt-header-v4 .bt-search-sidebar > a'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#333333',
@@ -1104,6 +1169,8 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-stick-active .bt-header-v4 .bt-menu-list > ul > li > a, .bt-stick-active .bt-header-v4 .bt-header-menu .consulta_widget_mini_cart .bt-cart-header > a, .bt-stick-active .bt-header-v4 .bt-header-menu .bt-search-sidebar > a'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#333333', 
@@ -1123,6 +1190,8 @@
 				'google'      => true, 
 				'font-backup' => true,
 				'letter-spacing' => true,
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'output'      => array('
 										.bt-header-v4 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > a, 
 										.bt-header-v4 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > ul > li > a, 
@@ -1219,6 +1288,8 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-header-v5 .bt-menu-list > ul > li > a, .bt-header-v5 .bt-header-menu .consulta_widget_mini_cart .bt-cart-header > a, .bt-header-v5 .bt-search-sidebar > a'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#ffffff',
@@ -1239,6 +1310,8 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-stick-active .bt-header-v5 .bt-menu-list > ul > li > a, .bt-stick-active .bt-header-v5 .bt-header-menu .consulta_widget_mini_cart .bt-cart-header > a, .bt-stick-active .bt-header-v5 .bt-header-menu .bt-search-sidebar > a'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#333333', 
@@ -1258,6 +1331,8 @@
 				'google'      => true, 
 				'font-backup' => true,
 				'letter-spacing' => true,
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'output'      => array('
 										.bt-header-v5 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > a, 
 										.bt-header-v5 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > ul > li > a, 
@@ -1334,6 +1409,8 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-header-v6 .bt-menu-list > ul > li > a, .bt-header-v6 .bt-header-menu .consulta_widget_mini_cart .bt-cart-header > a, .bt-header-v6 .bt-search-sidebar > a'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#ffffff',
@@ -1354,6 +1431,8 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-stick-active .bt-header-v6 .bt-menu-list > ul > li > a, .bt-stick-active .bt-header-v6 .bt-header-menu .consulta_widget_mini_cart .bt-cart-header > a, .bt-stick-active .bt-header-v6 .bt-header-menu .bt-search-sidebar > a'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#333333', 
@@ -1373,6 +1452,8 @@
 				'google'      => true, 
 				'font-backup' => true,
 				'letter-spacing' => true,
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'output'      	=> array('
 										.bt-header-v6 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > a, 
 										.bt-header-v6 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > ul > li > a, 
@@ -1460,6 +1541,8 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-header-v7 .bt-menu-list > ul > li > a, .bt-header-v7 .bt-header-menu .consulta_widget_mini_cart .bt-cart-header > a, .bt-header-v7 .bt-search-sidebar > a'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#ffffff',
@@ -1480,6 +1563,8 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-stick-active .bt-header-v7 .bt-menu-list > ul > li > a, .bt-stick-active .bt-header-v7 .bt-header-menu .consulta_widget_mini_cart .bt-cart-header > a, .bt-stick-active .bt-header-v7 .bt-header-menu .bt-search-sidebar > a'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#333333', 
@@ -1499,6 +1584,8 @@
 				'google'      => true, 
 				'font-backup' => true,
 				'letter-spacing' => true,
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'output'      	=> array('
 										.bt-header-v7 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > a, 
 										.bt-header-v7 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > ul > li > a, 
@@ -1793,6 +1880,8 @@
 				'letter-spacing' => true,
 				'output'      	=> array('.bt-title-bar-wrap h2'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#cecece', 
@@ -1813,6 +1902,8 @@
 				'letter-spacing' => true,
 				'output'      	=> array('.bt-title-bar-wrap .bt-path, .bt-title-bar-wrap .bt-path a, .woocommerce .bt-page-title-shop, .woocommerce .bt-page-title-shop a'),
 				'units'       =>'px',
+				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'fonts'  => $fonts,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
 					'color'       => '#cecece', 
