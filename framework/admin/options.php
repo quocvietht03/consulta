@@ -460,7 +460,7 @@
 				'letter-spacing' => true,
 				'output'      => array('body'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -482,7 +482,7 @@
 				'letter-spacing' => true,
 				'output'      => array('body h1, .bt-font-size-1'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -504,7 +504,7 @@
 				'letter-spacing' => true,
 				'output'      => array('body h2, .bt-font-size-2'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -526,7 +526,7 @@
 				'letter-spacing' => true,
 				'output'      => array('body h3, .bt-font-size-3'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -548,7 +548,7 @@
 				'letter-spacing' => true,
 				'output'      => array('body h4, .bt-font-size-4'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -570,7 +570,7 @@
 				'letter-spacing' => true,
 				'output'      => array('body h5, .bt-font-size-5'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -592,7 +592,7 @@
 				'letter-spacing' => true,
 				'output'      => array('body h6, .bt-font-size-6'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -731,7 +731,7 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-header-v1 .bt-menu-list > ul > li > a'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -753,7 +753,7 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-stick-active .bt-header-v1 .bt-menu-list > ul > li > a'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -774,7 +774,7 @@
 				'google'      => true, 
 				'font-backup' => true,
 				'letter-spacing' => true,
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'output'      	=> array('
 										.bt-header-v1 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > a, 
@@ -874,7 +874,7 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-header-v2 .bt-menu-list > ul > li > a'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -896,7 +896,7 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-stick-active .bt-header-v2 .bt-menu-list > ul > li > a'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -917,7 +917,7 @@
 				'google'      => true, 
 				'font-backup' => true,
 				'letter-spacing' => true,
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'output'      	=> array('
 										.bt-header-v2 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > a, 
@@ -1006,7 +1006,7 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-header-v3 .bt-menu-list > ul > li > a, .bt-header-v3 .bt-header-menu .consulta_widget_mini_cart .bt-cart-header > a, .bt-header-v3 .bt-search-sidebar > a'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -1028,7 +1028,7 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-stick-active .bt-header-v3 .bt-menu-list > ul > li > a, .bt-stick-active .bt-header-v3 .bt-header-menu .consulta_widget_mini_cart .bt-cart-header > a, .bt-stick-active .bt-header-v3 .bt-header-menu .bt-search-sidebar > a'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -1049,7 +1049,7 @@
 				'google'      => true, 
 				'font-backup' => true,
 				'letter-spacing' => true,
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'output'      => array('
 										.bt-header-v3 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > a, 
@@ -1147,7 +1147,7 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-header-v4 .bt-menu-list > ul > li > a, .bt-header-v4 .bt-header-menu .consulta_widget_mini_cart .bt-cart-header > a, .bt-header-v4 .bt-search-sidebar > a'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -1169,7 +1169,7 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-stick-active .bt-header-v4 .bt-menu-list > ul > li > a, .bt-stick-active .bt-header-v4 .bt-header-menu .consulta_widget_mini_cart .bt-cart-header > a, .bt-stick-active .bt-header-v4 .bt-header-menu .bt-search-sidebar > a'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -1190,7 +1190,7 @@
 				'google'      => true, 
 				'font-backup' => true,
 				'letter-spacing' => true,
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'output'      => array('
 										.bt-header-v4 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > a, 
@@ -1288,7 +1288,7 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-header-v5 .bt-menu-list > ul > li > a, .bt-header-v5 .bt-header-menu .consulta_widget_mini_cart .bt-cart-header > a, .bt-header-v5 .bt-search-sidebar > a'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -1310,7 +1310,7 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-stick-active .bt-header-v5 .bt-menu-list > ul > li > a, .bt-stick-active .bt-header-v5 .bt-header-menu .consulta_widget_mini_cart .bt-cart-header > a, .bt-stick-active .bt-header-v5 .bt-header-menu .bt-search-sidebar > a'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -1331,7 +1331,7 @@
 				'google'      => true, 
 				'font-backup' => true,
 				'letter-spacing' => true,
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'output'      => array('
 										.bt-header-v5 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > a, 
@@ -1409,7 +1409,7 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-header-v6 .bt-menu-list > ul > li > a, .bt-header-v6 .bt-header-menu .consulta_widget_mini_cart .bt-cart-header > a, .bt-header-v6 .bt-search-sidebar > a'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -1431,7 +1431,7 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-stick-active .bt-header-v6 .bt-menu-list > ul > li > a, .bt-stick-active .bt-header-v6 .bt-header-menu .consulta_widget_mini_cart .bt-cart-header > a, .bt-stick-active .bt-header-v6 .bt-header-menu .bt-search-sidebar > a'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -1452,7 +1452,7 @@
 				'google'      => true, 
 				'font-backup' => true,
 				'letter-spacing' => true,
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'output'      	=> array('
 										.bt-header-v6 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > a, 
@@ -1541,7 +1541,7 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-header-v7 .bt-menu-list > ul > li > a, .bt-header-v7 .bt-header-menu .consulta_widget_mini_cart .bt-cart-header > a, .bt-header-v7 .bt-search-sidebar > a'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -1563,7 +1563,7 @@
 				'letter-spacing' => true,
 				'output'      => array('.bt-stick-active .bt-header-v7 .bt-menu-list > ul > li > a, .bt-stick-active .bt-header-v7 .bt-header-menu .consulta_widget_mini_cart .bt-cart-header > a, .bt-stick-active .bt-header-v7 .bt-header-menu .bt-search-sidebar > a'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -1584,7 +1584,7 @@
 				'google'      => true, 
 				'font-backup' => true,
 				'letter-spacing' => true,
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'output'      	=> array('
 										.bt-header-v7 .bt-menu-list > ul > li.menu-item-has-children.nomega-menu-item > ul > li > a, 
@@ -1880,7 +1880,7 @@
 				'letter-spacing' => true,
 				'output'      	=> array('.bt-title-bar-wrap h2'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(
@@ -1902,7 +1902,7 @@
 				'letter-spacing' => true,
 				'output'      	=> array('.bt-title-bar-wrap .bt-path, .bt-title-bar-wrap .bt-path a, .woocommerce .bt-page-title-shop, .woocommerce .bt-page-title-shop a'),
 				'units'       =>'px',
-				'ext-font-css' => get_template_directory().'/assets/css/fonts.css',
+				'ext-font-css' => get_template_directory_uri().'/assets/css/fonts.css',
 				'fonts'  => $fonts, 'google' => false,
 				'subtitle'    => __('Typography option with each property can be called individually.', 'consulta'),
 				'default'     => array(

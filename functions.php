@@ -246,6 +246,7 @@ function consulta_enqueue_scripts() {
 	global $consulta_options;
 	
 	wp_enqueue_style( 'consulta-fonts', consulta_fonts_url(), false );
+	wp_enqueue_style('consulta-external-fonts', get_template_directory_uri().'/assets/css/fonts.css', false );
 	wp_enqueue_style( 'bootstrap-min', consulta_URI_PATH.'/assets/css/bootstrap.min.css', false );
 	wp_enqueue_style('owl-carousel', consulta_URI_PATH . "/assets/vendors/owl-carousel/owl.carousel.css",array(),"");
 	wp_enqueue_style('slick', consulta_URI_PATH . "/assets/vendors/slick/slick.css",array(),"");
